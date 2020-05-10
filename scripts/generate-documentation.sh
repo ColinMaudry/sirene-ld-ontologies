@@ -18,6 +18,7 @@ java -jar $widocoJar -ontFile sirene.ttl -outFolder sirene -htaccess -oops -rewr
 sed -i 's/index\-en.html/index-fr.html/g' sirene/.htaccess
 
 # Move to htdocs (hosting on Gandi simple server)
+rm -r htdocs/sirene
 mv sirene htdocs
 
 

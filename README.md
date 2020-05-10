@@ -4,10 +4,12 @@ Les ontologies liées au projet [sireneLD](https://github.com/colinmaudry/sirene
 
 Les ontologies intégrées :
 
-- `sirene` : classes et propriétés utilisées pour décrire les unités légales et les établissements présents dans la base SIRENE
+- `sirene` ([documentation](https://sireneld.io/vocab/sirene)) : classes et propriétés utilisées pour décrire les unités légales et les établissements présents dans la base SIRENE
 
 
 ## HTML publication
+
+
 
 ### Requirements
 
