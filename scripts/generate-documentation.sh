@@ -4,7 +4,7 @@
 
 # Download jar if not present
 
-widocoJar="./ontologies/widoco-1.4.13-jar-with-dependencies.jar"
+widocoJar="widoco-1.4.13-jar-with-dependencies.jar"
 
 if [[ ! -f $widocoJar ]]
 then
@@ -12,4 +12,11 @@ then
 fi
 
 # Generate documentation
-java -jar $widocoJar -ontFile ontologies/sirene.ttl -outFolder ontologies/html -oops -rewriteAll -lang "fr" -htaccess -webVowl
+java -jar $widocoJar -ontFile sirene.ttl -outFolder sirene -htaccess -oops -rewriteAll -lang "fr-en" -webVowl
+
+# Fix paths
+sed -i 's/index\-en.html/index-fr.html/g' sirene/.htaccess
+
+
+
+
