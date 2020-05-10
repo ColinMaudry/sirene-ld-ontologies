@@ -1,0 +1,1432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://sireneld.io/vocab/sirene#"
+     xml:base="https://sireneld.io/vocab/sirene"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://sireneld.io/vocab/sirene#">
+        <ns:license rdf:resource="http://unlicense.org"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-29</terms:created>
+        <terms:creator rdf:resource="http://colin.maudry.com/rdf/colin-maudry#me"/>
+        <terms:description xml:lang="fr">L&apos;ontologie SIRENE est dérivée des termes utilisés par l&apos;INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr.</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-11</terms:modified>
+        <terms:title>Ontologie SIRENE</terms:title>
+        <vann:preferredNamespacePrefix>sirene</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:seeAlso rdf:resource="https://sireneld.io"/>
+        <rdfs:seeAlso rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:seeAlso rdf:resource="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#activitePrincipale -->
+
+
+    <owl:ObjectProperty rdf:about="https://sireneld.io/vocab/sirene#activitePrincipale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Code d&apos;activité principale exercée selon la nomenclature NAFRev2.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Activité principale (NAFRev2)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/3281579"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#etablissement -->
+
+
+    <owl:ObjectProperty rdf:about="https://sireneld.io/vocab/sirene#etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:comment>Un établissement de l&apos;unité légale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Établissement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#etatAdministratif -->
+
+
+    <owl:ObjectProperty rdf:about="https://sireneld.io/vocab/sirene#etatAdministratif">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:range rdf:resource="https://sireneld.io/vocab/sirene#EtatAdministratif"/>
+        <rdfs:comment>Un nouvel établissement est toujours Actif. Un établissement fermé peut être rouvert.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>État administratif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#siege -->
+
+
+    <owl:ObjectProperty rdf:about="https://sireneld.io/vocab/sirene#siege">
+        <rdfs:subPropertyOf rdf:resource="https://sireneld.io/vocab/sirene#etablissement"/>
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="https://sireneld.io/vocab/sirene#Siege"/>
+        <rdfs:comment>Établissement siège de l&apos;unité légale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Siège</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#trancheEffectifs -->
+
+
+    <owl:ObjectProperty rdf:about="https://sireneld.io/vocab/sirene#trancheEffectifs">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:range rdf:resource="https://sireneld.io/vocab/sirene#TrancheEffectifs"/>
+        <rdfs:comment>Il s’agit d’une variable statistique, millésimée au 31/12 d’une année donnée (voir variable anneeEffectifsEtablissement).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Tranche d&apos;effectif salarié (TEF)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#activitePrincipaleRegistreMetiersEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#activitePrincipaleRegistreMetiersEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Activité principale au registre des métiers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Activité principale au registre des métiers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#anneeCategorieEntreprise -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#anneeCategorieEntreprise">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment>Cette variable désigne l’année de validité correspondant à la catégorie d&apos;entreprise diffusée.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Année de validité de la catégorie d’entreprise</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#anneeEffectifsEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#anneeEffectifsEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Année de validité de l&apos;effectif salarié de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Année de validité de l&apos;effectif salarié</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#anneeEffectifsUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#anneeEffectifsUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment>Seule la dernière année de mise à jour de l’effectif salarié de l’unité légale est donnée si celle-ci est inférieure ou égale à l’année d’interrogation-3. Ainsi une interrogation en 2018 ne renverra la dernière année de mise à jour de l’effectif que si cette année est supérieure ou égale à 2015.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Année de validité de l&apos;effectif salarié</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#caractereEmployeurEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#caractereEmployeurEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Lors de sa formalité d’ouverture, le déclarant indique si l’établissement aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’établissement en « employeur ».</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Caractère employeur de l’établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#caractereEmployeurUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#caractereEmployeurUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Lors de sa formalité de création, le déclarant indique si l’unité légale aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’unité légale en « Employeuse ». Inversement, lorsqu’une déclaration de fin d’emploi est traitée, l’unité légale devient « Non employeuse »..</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Caractère employeur de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#categorieJuridiqueUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#categorieJuridiqueUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>La catégorie juridique est un attribut des unités légales. Cette variable est à 1000 pour les personnes physiques.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Catégorie juridique de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codeCedex2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codeCedex2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, c’est un élément constitutif de l’adresse secondaire. Exemple à Saint Nazaire : 44601</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code cedex de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codeCedexEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codeCedexEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable un élément constitutif de l’adresse. Exemple à Saint Nazaire : 44601</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code cedex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codeCommune2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codeCommune2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code de la commune de l’adresse secondaire de l’établissement, hors adresse à l&apos;étranger.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code commune de l’adresse secondaire</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/2028028"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codeCommuneEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codeCommuneEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Code commune (COG) de localisation de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code commune de l&apos;établissement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/2028028"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codePaysEtranger2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codePaysEtranger2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code du pays de localisation de l&apos;adresse secondaire de l&apos;établissement pour les adresses à l&apos;étranger</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code pays de l’adresse secondaire pour un établissement situé à l’étranger</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/2028273"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codePaysEtrangerEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codePaysEtrangerEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne le code du pays de localisation de l&apos;établissement pour les adresses à l&apos;étranger. La variable codePaysEtrangerEtablissement commence toujours par 99 si elle est renseignée. Les 3 caractères suivants sont le code du pays étranger</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code pays pour un établissement situé à l’étranger</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/2028273"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codePostal2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codePostal2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code postal de l’adresse secondaire de l’établissement.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code postal de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#codePostalEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#codePostalEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Code postal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code postal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#complementAdresse2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#complementAdresse2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable est un élément constitutif de l’adresse secondaire.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Complément d’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#complementAdresseEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#complementAdresseEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable est un élément constitutif de l’adresse. C&apos;est une variable facultative qui précise l&apos;adresse avec une indication d&apos;étage, d&apos;appartement, de porte, de N° de boîte à lettres, la désignation d&apos;un bâtiment, d&apos;un escalier, d&apos;une entrée, d&apos;un bloc, le nom d&apos;une résidence, d&apos;un ensemble...</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Complément d’adresse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateCreation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateCreation">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Date de création de l&apos;unité légale ou de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Date de création</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateCreationEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateCreationEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Année et mois de création de l&apos;établissement</rdfs:comment>
+        <rdfs:comment>La date de création ne correspond pas obligatoirement à dateDebut de la première période de l&apos;établissement, certaines variables historisées pouvant posséder des dates de début soit au 1900-01-01, soit antérieures à la date de création.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Année et mois de création</rdfs:label>
+        <rdfs:label>Date de début d&apos;une période d&apos;historique d&apos;un établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateCreationUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateCreationUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Année et mois de création de l&apos;entreprise</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Année et mois de création</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateDebut -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateDebut">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Date de début de la période au cours de laquelle toutes les variables historisées de l&apos;unité légale ou de l&apos;établissement restent inchangées.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Date de début d&apos;une période d&apos;historique d&apos;une unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateDernierTraitementEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateDernierTraitementEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Date du dernier traitement de l’établissement dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Date de traitement de la dernière mise à jour</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#dateDernierTraitementUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#dateDernierTraitementUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Date du dernier traitement de l’unité légale dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Date de traitement de la dernière mise à jour</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#denominationUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#denominationUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne la raison sociale pour les personnes morales. Il s&apos;agit du nom sous lequel est déclarée l&apos;unité légale. Cette variable est à null pour les personnes physiques.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nom ou raison sociale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne le nom (ou les noms) sous lequel l&apos;entreprise est connue du grand public. Cet élément d&apos;identification de l&apos;entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l&apos;application de la norme d&apos;échanges CFE de 2008.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Dénomination usuelle de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#denominationUsuelle2UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#denominationUsuelle2UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne le nom (ou les noms) sous lequel l&apos;entreprise est connue du grand public. Cet élément d&apos;identification de l&apos;entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l&apos;application de la norme d&apos;échanges CFE de 2008.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Dénomination usuelle de l’unité légale - deuxième champ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#denominationUsuelle3UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#denominationUsuelle3UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne le nom (ou les noms) sous lequel l&apos;entreprise est connue du grand public. Cet élément d&apos;identification de l&apos;entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l&apos;application de la norme d&apos;échanges CFE de 2008.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Dénomination usuelle de l’unité légale - troisième champ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#denominationUsuelleEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#denominationUsuelleEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable désigne le nom sous lequel l&apos;établissement est connu du grand public. Cet élément d&apos;identification de l&apos;établissement a été enregistré au niveau établissement depuis l&apos;application de la norme d&apos;échanges CFE de 2008. Avant la norme 2008, la dénomination usuelle était enregistrée au niveau de l&apos;unité légale sur trois champs (cf. variables denominationUsuelle1UniteLegale à denominationUsuelle3UniteLegale dans le descriptif des variables du fichier StockUniteLegale).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Dénomination usuelle de l’établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#distributionSpeciale2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#distributionSpeciale2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans  le  cas  où  l’établissement  dispose  d’une  entrée  secondaire, la  distribution  spéciale  reprend  les éléments particuliers qui accompagnent l’adresse secondaire de distribution spéciale. C’est un élément constitutif de l’adresse secondaire.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Distribution spéciale de l’adresse secondaire de l’établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#distributionSpecialeEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#distributionSpecialeEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>La distribution spéciale reprend les éléments particuliers qui accompagnent une adresse de distribution spéciale. C’est un élément constitutif de l’adresse.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Distribution spéciale de l’établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#economieSocialeSolidaireUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#economieSocialeSolidaireUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Cette variable indique si l&apos;entreprise appartient au   champ   de l’économie sociale et solidaire. La loi n° 2014-856 du 31 juillet 2014 définit officiellement le périmètre de l’économie sociale et solidaire (ESS). </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Appartenance au champ de l’économie sociale et solidaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#enseigne1Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#enseigne1Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Première ligne d’enseigne de l’établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Enseigne ligne 1</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#enseigne2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#enseigne2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Deuxième ligne d’enseigne de l’établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Enseigne ligne 2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#enseigne3Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#enseigne3Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Troisième ligne d’enseigne de l’établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Enseigne ligne 3</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#etablissementSiege -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#etablissementSiege">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Qualité de siège ou non de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Qualité de siège</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#geo_adresse -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#geo_adresse">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>geo_adresse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#geo_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#geo_id">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>geo_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#geo_ligne -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#geo_ligne">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>geo_ligne</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#geo_score -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#geo_score">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Score de la qualité du géocode</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Géoscore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#geo_type -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#geo_type">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>&apos;housenumber&apos; si les coordonnées géographiques correspondent à la combinaison rue + numéro, &apos;street&apos; si les coordonnées géographiques ne correspondant qu&apos;à la rue.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>geo_type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#identifiantAssociationUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#identifiantAssociationUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Lors de sa déclaration en préfecture, l’association reçoit automatiquement un numéro d’inscription au RNA. Elle doit en outre demander son immatriculation au répertoire Sirene lorsqu&apos;elle souhaite demander des subventions auprès de l&apos;État ou des collectivités territoriales, lorsqu&apos;elle emploie des salariés ou lorsqu&apos;elle exerce des activités qui conduisent au paiement de la TVA ou de l&apos;impôt sur les sociétés.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro au Répertoire National des Associations (RNA)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#indiceRepetition2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#indiceRepetition2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable un élément constitutif de l’adresse secondaire. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Indice de répétition dans la voie pour l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#indiceRepetitionEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#indiceRepetitionEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indice de répétition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Indice de répétition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#latitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#latitude">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Latitude issue du géocodage</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCedex2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCedex2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Code CEDEX de l&apos;adresse secondaire. Exemple : ST NAZAIRE CEDEX. Cette variable indique le libellé correspondant au code cedex de l’adresse secondaire de l&apos;établissement si celui-ci est non null. Ce libellé est le libellé utilisé dans la ligne 6 d’adresse pour l’acheminement postal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé du code cedex de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCedexEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCedexEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Code CEDEX. Exemple : ST NAZAIRE CEDEX. Ce libellé est le libellé utilisé dans la ligne 6 d’adresse pour l’acheminement postal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé du code cedex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCommune2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCommune2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé de la commune de l’adresse secondaire de l&apos;établissement si celui-ci n’est pas à l’étranger. C’est un élément constitutif de l’adresse.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de la commune de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCommuneEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCommuneEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé de la commune de localisation de l&apos;établissement si celui-ci n’est pas à l’étranger. C’est un élément constitutif de l’adresse.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de la commune</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCommuneEtranger2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCommuneEtranger2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable est un élément constitutif de l’adresse secondaire pour les établissements situés sur le territoire étranger (la variable codeCommune2Etablissement est vide).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de la commune de l’adresse secondaire pour un établissement situé à l’étranger</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleCommuneEtrangerEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleCommuneEtrangerEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable est un élément constitutif de l’adresse pour les établissements situés sur le territoire étranger (la variable codeCommuneEtablissement est vide).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de la commune pour un établissement situé à l’étranger</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libellePaysEtranger2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libellePaysEtranger2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé du pays de localisation de l’adresse secondaire de l&apos;établissement si celui-ci est à l’étranger. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé du pays de l’adresse secondaire pour un établissement situé à l’étranger</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libellePaysEtrangerEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libellePaysEtrangerEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé du pays de localisation de l&apos;établissement si celui-ci est à l’étranger.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé du pays pour un établissement situé à l’étranger</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleVoie2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleVoie2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé de la voie de l’adresse secondaire de l&apos;établissement. C’est un élément constitutif de l’adresse secondaire.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de voie de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#libelleVoieEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#libelleVoieEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Libellé de voie de localisation de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Libellé de voie de localisation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#longitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#longitude">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Longitude issue du géocodage</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nic -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nic">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Numéro interne de classement de l&apos;établissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>NIC</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nicSiegeUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nicSiegeUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Le siège d’une unité légale est le lieu où sont centralisées l’administration et la direction effective de l’unité légale. À un instant donné, chaque unité légale a un seul siège.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro interne de classement de l&apos;établissement siège</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nomUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nomUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique le libellé le nom de naissance pour une personne physique. Cette variable est à null pour les personnes morales. Le répertoire Sirene gère des caractères majuscules non accentués et les seuls caractères spéciaux tiret (-) et apostrophe.Le nom peut être à null (cas des unités purgées, première date de début du nom postérieure à la première date de début d&apos;une autre variable historisée).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nom de naissance de la personne physique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nomUsageUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nomUsageUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Le nom d’usage est celui que la personne physique a choisi d’utiliser. Cette variable est à null pour les personnes morales. Elle peut être également à null pour les personnes physiques.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nom d’usage de la personne physique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nombrePeriodesEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nombrePeriodesEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Cette  variable  donne le nombre  de  périodes [dateDebut,dateFin] de  l’établissement. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’établissement n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nombre de périodes de l’établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nombrePeriodesUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nombrePeriodesUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Cette variable donne le nombre de périodes [dateDebut,dateFin] de l’unité légale. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’unité légale n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nombre de périodes de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique la nomenclature d’activité correspondant à la variable activitePrincipaleEtablissement (NAFRev2, NAFRev1, NAF1993, NAP)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nomenclature d’activité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique la nomenclature d’activité correspondant à la variable activitePrincipaleUniteLegale (NAFRev2, NAFRev1, NAF1993, NAP)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Nomenclature d’activité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#numeroVoie2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#numeroVoie2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Si plusieurs numéros de voie sont indiqués (5-7, 5 à 7 ...), l&apos;information complète (5-7) ou (5 à 7) figure en complément d&apos;adresse et le premier des numéros (5 dans l&apos;exemple) est porté dans la variable numeroVoieEtablissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro de la voie de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#numeroVoieEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#numeroVoieEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Si plusieurs numéros de voie sont indiqués (5-7, 5 à 7 ...), l&apos;information complète (5-7) ou (5 à 7) figure en complément d&apos;adresse et le premier des numéros (5 dans l&apos;exemple) est porté dans la variable numeroVoieEtablissement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro de voie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#prenom1UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#prenom1UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Premier prénom déclaré</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Prénom 1</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#prenom2UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#prenom2UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Deuxième prénom déclaré</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Prénom 2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#prenom3UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#prenom3UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Troisième prénom déclaré</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Prénom 3</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#prenom4UniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#prenom4UniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Quatrième prénom déclaré</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Prénom 4</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#prenomUsuelUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#prenomUsuelUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Le prénom usuel est le prénom par lequel une personne choisit de se faire appeler dans la vie courante, parmi l&apos;ensemble de ceux qui lui ont été donnés à sa naissance et qui sont inscrits à l&apos;état civil. Il correspond généralement au prenom1UniteLegale. Cette variable est à null pour les personnes morales.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Prénom usuel de la personne physique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#pseudonymeUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#pseudonymeUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable correspond au nom qu’une personne utilise pour se désigner dans l’exercice de son activité, généralement littéraire ou artistique.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Pseudonyme de la personne physique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#sexeUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#sexeUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Caractère féminin ou masculin de la personne physique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#sigleUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#sigleUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Un sigle est une forme réduite de la raison sociale ou de la dénomination d&apos;une personne morale ou d&apos;un organisme public. Cette variable est à null pour les personnes physiques.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Sigle de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#siren -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#siren">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Un numéro d’identité de l’unité légale est attribué par l’Insee à toutes les personnes physiques ou morales inscrites au répertoire ainsi qu’à leurs établissements : le numéro Siren. Ce numéro unique est « attribué soit à l’occasion des demandes d’immatriculation au registre du commerce et des sociétés ou des déclarations effectuées au répertoire des métiers, soit à la demande d’administrations » (article R123-224 du code de commerce). Lors de sa création, une unité légale se voit attribuer un numéro Siren de 9 chiffres.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro Siren</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#siret -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#siret">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Le numéro Siret est le numéro unique d’identification attribué à chaque établissement par l’Insee. Ce numéro est un simple numéro d’ordre, composé de 14 chiffres non significatifs : les neuf premiers correspondent au numéro Siren de l’entreprise dont l’établissement dépend et les cinq derniers à un numéro interne de classement (Nic). Une entreprise est constituée d’autant d’établissements qu’il y a de lieux différents où elle exerce son activité. L’établissement est fermé quand l’activité cesse dans l’établissement concerné ou lorsque l’établissement change d’adresse.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Numéro Siret</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#statutDiffusionEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#statutDiffusionEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Seuls les établissements diffusibles sont accessibles à tout public (statutDiffusionEtablissement=O).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Statut de diffusion de l&apos;établissement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#statutDiffusionUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#statutDiffusionUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Seules les unités légales diffusibles sont accessibles à tout public (statutDiffusionUniteLegale=O).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Statut de diffusion de l’unité légale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#typeVoie2Etablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#typeVoie2Etablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Si le type de voie est d&apos;une longueur inférieure ou égale à 4 caractères, le type de voie n&apos;est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Type de voie de l’adresse secondaire</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#typeVoieEtablissement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#typeVoieEtablissement">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Si le type de voie est d&apos;une longueur inférieure ou égale à 4 caractères, le type de voie n&apos;est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Type de voie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#unitePurgeeUniteLegale -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/sirene#unitePurgeeUniteLegale">
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Cette variable indique si l&apos;unité légale a été purgée. Pour des raisons de capacité de stockage des données, les données concernant les entreprises cessées avant le 31/12/2002 ont été purgées.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Unité légale purgée</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#CodeNomenclature -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#CodeNomenclature">
+        <rdfs:comment>Code issue d&apos;une nomenclature officielle</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#ETI -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#ETI">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:comment>Une entreprise de taille intermédiaire est une entreprise qui a entre 250 et 4999 salariés, et soit un chiffre d&apos;affaires n&apos;excédant pas 1,5 milliards d&apos;euros soit un total de bilan n&apos;excédant pas 2 milliards d&apos;euros. Une entreprise qui a moins de 250 salariés, mais plus de 50 millions d&apos;euros de chiffre d&apos;affaires et plus de 43 millions d&apos;euros de total de bilan est aussi considérée comme une ETI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Entreprise de Taille Intermédiaire</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/1730869"/>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/metadonnees/definition/c1057"/>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#Etablissement -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#Etablissement">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:comment>Entité identifiée par un numéro SIRET</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Établissement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#EtatAdministratif -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#EtatAdministratif">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#CodeNomenclature"/>
+        <rdfs:comment>Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active ». Pour les personnes morales, la cessation administrative est, en théorie, définitive, l’état administratif « Cessée » est irréversible.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>État administratif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#GE -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#GE">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:comment>Une grande entreprise est une entreprise qui a au moins 5000 salariés. Une entreprise qui a moins de 5000 salariés mais plus de 1,5 milliards d&apos;euros de chiffre d&apos;affaires et plus de 2 milliards d&apos;euros de total de bilan est aussi considérée comme une grande entreprise.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Grande Entreprise</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/1730869"/>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/metadonnees/definition/c1057"/>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#ObjetSirene -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#ObjetSirene">
+        <rdfs:label>Objet Sirene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#PME -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#PME">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#UniteLegale"/>
+        <rdfs:comment>La catégorie des petites et moyennes entreprises (PME) est constituée des entreprises qui occupent moins de 250 personnes, et qui ont un chiffre d&apos;affaires annuel inférieur à 50 millions d&apos;euros ou un total de bilan n&apos;excédant pas 43 millions d&apos;euros. Cette catégorie inclut les microentreprises.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Petite ou Moyenne Entreprise</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/information/1730869"/>
+        <rdfs:seeAlso rdf:resource="https://www.insee.fr/fr/metadonnees/definition/c1057"/>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#Siege -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#Siege">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#Etablissement"/>
+        <rdfs:comment>Un établissement qui est le siège de l&apos;unité légale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Siège</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#TrancheEffectifs -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#TrancheEffectifs">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#CodeNomenclature"/>
+        <rdfs:comment>Tranche d&apos;effectif salarié (TEF). Cette variable correspond à la tranche d&apos;effectif salarié de l&apos;unité légale ou de l&apos;établissement. C&apos;est une variable statistique, millésimée au 31/12 d&apos;une année donnée, majoritairement l&apos;année n-2. Elle est à rapprocher de sa date de validité, c&apos;est-à-dire de la date de mise à jour de l&apos;effectif salarié de l&apos;unité légale ou de l&apos;établissement.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Tranche d&apos;effectif salarié (TEF)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sireneld.io/vocab/sirene#UniteLegale -->
+
+
+    <owl:Class rdf:about="https://sireneld.io/vocab/sirene#UniteLegale">
+        <rdfs:subClassOf rdf:resource="https://sireneld.io/vocab/sirene#ObjetSirene"/>
+        <rdfs:comment>Entité identifiée par un numéro SIREN</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:label>Unité légale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://colin.maudry.com/rdf/colin-maudry#me">
+        <foaf:mbox rdf:resource="mailto:colin@maudry.com"/>
+        <foaf:name>Colin Maudry</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

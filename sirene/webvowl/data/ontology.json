@@ -1,0 +1,3369 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "fr", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://sireneld.io/vocab/sirene", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "undefined" : "Ontologie SIRENE"
+    },
+    "iri" : "https://sireneld.io/vocab/sirene#",
+    "author" : [ "http://colin.maudry.com/rdf/colin-maudry#me" ],
+    "description" : {
+      "fr" : "L'ontologie SIRENE est dérivée des termes utilisés par l'INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://unlicense.org",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://colin.maudry.com/rdf/colin-maudry#me",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2018-04-29",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sirene",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-11-11",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Ontologie SIRENE",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://sireneld.io",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://sireneld.io/vocab/sirene#UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UniteLegale",
+      "undefined" : "Unité légale"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "comment" : {
+      "undefined" : "Entité identifiée par un numéro SIREN"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#ETI",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/1730869",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ETI",
+      "undefined" : "Entreprise de Taille Intermédiaire"
+    },
+    "comment" : {
+      "undefined" : "Une entreprise de taille intermédiaire est une entreprise qui a entre 250 et 4999 salariés, et soit un chiffre d'affaires n'excédant pas 1,5 milliards d'euros soit un total de bilan n'excédant pas 2 milliards d'euros. Une entreprise qui a moins de 250 salariés, mais plus de 50 millions d'euros de chiffre d'affaires et plus de 43 millions d'euros de total de bilan est aussi considérée comme une ETI."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#GE",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/1730869",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GE",
+      "undefined" : "Grande Entreprise"
+    },
+    "comment" : {
+      "undefined" : "Une grande entreprise est une entreprise qui a au moins 5000 salariés. Une entreprise qui a moins de 5000 salariés mais plus de 1,5 milliards d'euros de chiffre d'affaires et plus de 2 milliards d'euros de total de bilan est aussi considérée comme une grande entreprise."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Etablissement",
+      "undefined" : "Établissement"
+    },
+    "subClasses" : [ "48" ],
+    "comment" : {
+      "undefined" : "Entité identifiée par un numéro SIRET"
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#ObjetSirene",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjetSirene",
+      "undefined" : "Objet Sirene"
+    },
+    "subClasses" : [ "0", "8" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#Siege",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Siege",
+      "undefined" : "Siège"
+    },
+    "comment" : {
+      "undefined" : "Un établissement qui est le siège de l'unité légale"
+    },
+    "id" : "48",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#PME",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/1730869",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PME",
+      "undefined" : "Petite ou Moyenne Entreprise"
+    },
+    "comment" : {
+      "undefined" : "La catégorie des petites et moyennes entreprises (PME) est constituée des entreprises qui occupent moins de 250 personnes, et qui ont un chiffre d'affaires annuel inférieur à 50 millions d'euros ou un total de bilan n'excédant pas 43 millions d'euros. Cette catégorie inclut les microentreprises."
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#CodeNomenclature",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CodeNomenclature",
+      "undefined" : "Code"
+    },
+    "subClasses" : [ "11", "125" ],
+    "comment" : {
+      "undefined" : "Code issue d'une nomenclature officielle"
+    },
+    "id" : "160"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "gYear"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "gYear"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#EtatAdministratif",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EtatAdministratif",
+      "undefined" : "État administratif"
+    },
+    "comment" : {
+      "undefined" : "Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active ». Pour les personnes morales, la cessation administrative est, en théorie, définitive, l’état administratif « Cessée » est irréversible."
+    },
+    "id" : "11",
+    "superClasses" : [ "160" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#TrancheEffectifs",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TrancheEffectifs",
+      "undefined" : "Tranche d'effectif salarié (TEF)"
+    },
+    "comment" : {
+      "undefined" : "Tranche d'effectif salarié (TEF). Cette variable correspond à la tranche d'effectif salarié de l'unité légale ou de l'établissement. C'est une variable statistique, millésimée au 31/12 d'une année donnée, majoritairement l'année n-2. Elle est à rapprocher de sa date de validité, c'est-à-dire de la date de mise à jour de l'effectif salarié de l'unité légale ou de l'établissement."
+    },
+    "id" : "125",
+    "superClasses" : [ "160" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://sireneld.io/vocab/sirene#numeroVoie2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numeroVoie2Etablissement",
+      "undefined" : "Numéro de la voie de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Si plusieurs numéros de voie sont indiqués (5-7, 5 à 7 ...), l'information complète (5-7) ou (5 à 7) figure en complément d'adresse et le premier des numéros (5 dans l'exemple) est porté dans la variable numeroVoieEtablissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#etatAdministratif",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "etatAdministratif",
+      "undefined" : "État administratif"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Un nouvel établissement est toujours Actif. Un établissement fermé peut être rouvert."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#indiceRepetition2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "indiceRepetition2Etablissement",
+      "undefined" : "Indice de répétition dans la voie pour l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable un élément constitutif de l’adresse secondaire. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#longitude",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "longitude",
+      "undefined" : "Longitude"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Longitude issue du géocodage"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#etablissementSiege",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "etablissementSiege",
+      "undefined" : "Qualité de siège"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Qualité de siège ou non de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#caractereEmployeurUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "caractereEmployeurUniteLegale",
+      "undefined" : "Caractère employeur de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Lors de sa formalité de création, le déclarant indique si l’unité légale aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’unité légale en « Employeuse ». Inversement, lorsqu’une déclaration de fin d’emploi est traitée, l’unité légale devient « Non employeuse ».."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#enseigne3Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "enseigne3Etablissement",
+      "undefined" : "Enseigne ligne 3"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Troisième ligne d’enseigne de l’établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nomUsageUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nomUsageUniteLegale",
+      "undefined" : "Nom d’usage de la personne physique"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Le nom d’usage est celui que la personne physique a choisi d’utiliser. Cette variable est à null pour les personnes morales. Elle peut être également à null pour les personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#categorieJuridiqueUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "categorieJuridiqueUniteLegale",
+      "undefined" : "Catégorie juridique de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "La catégorie juridique est un attribut des unités légales. Cette variable est à 1000 pour les personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#pseudonymeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pseudonymeUniteLegale",
+      "undefined" : "Pseudonyme de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable correspond au nom qu’une personne utilise pour se désigner dans l’exercice de son activité, généralement littéraire ou artistique."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#unitePurgeeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "unitePurgeeUniteLegale",
+      "undefined" : "Unité légale purgée"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable indique si l'unité légale a été purgée. Pour des raisons de capacité de stockage des données, les données concernant les entreprises cessées avant le 31/12/2002 ont été purgées."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#statutDiffusionEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "statutDiffusionEtablissement",
+      "undefined" : "Statut de diffusion de l'établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Seuls les établissements diffusibles sont accessibles à tout public (statutDiffusionEtablissement=O)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateDernierTraitementEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateDernierTraitementEtablissement",
+      "undefined" : "Date de traitement de la dernière mise à jour"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Date du dernier traitement de l’établissement dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#siege",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "siege",
+      "undefined" : "Siège"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Établissement siège de l'unité légale"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUniteLegale",
+      "undefined" : "Nom ou raison sociale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne la raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale. Cette variable est à null pour les personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateDebut",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateDebut",
+      "undefined" : "Date de début d'une période d'historique d'une unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Date de début de la période au cours de laquelle toutes les variables historisées de l'unité légale ou de l'établissement restent inchangées."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codeCedexEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeCedexEtablissement",
+      "undefined" : "Code cedex"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable un élément constitutif de l’adresse. Exemple à Saint Nazaire : 44601"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codeCommune2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/2028028",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeCommune2Etablissement",
+      "undefined" : "Code commune de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code de la commune de l’adresse secondaire de l’établissement, hors adresse à l'étranger."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCommune2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "64",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCommune2Etablissement",
+      "undefined" : "Libellé de la commune de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé de la commune de l’adresse secondaire de l'établissement si celui-ci n’est pas à l’étranger. C’est un élément constitutif de l’adresse."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#economieSocialeSolidaireUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "economieSocialeSolidaireUniteLegale",
+      "undefined" : "Appartenance au champ de l’économie sociale et solidaire"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable indique si l'entreprise appartient au   champ   de l’économie sociale et solidaire. La loi n° 2014-856 du 31 juillet 2014 définit officiellement le périmètre de l’économie sociale et solidaire (ESS). "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#typeVoie2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "typeVoie2Etablissement",
+      "undefined" : "Type de voie de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Si le type de voie est d'une longueur inférieure ou égale à 4 caractères, le type de voie n'est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCedex2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "71",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCedex2Etablissement",
+      "undefined" : "Libellé du code cedex de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Code CEDEX de l'adresse secondaire. Exemple : ST NAZAIRE CEDEX. Cette variable indique le libellé correspondant au code cedex de l’adresse secondaire de l'établissement si celui-ci est non null. Ce libellé est le libellé utilisé dans la ligne 6 d’adresse pour l’acheminement postal."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#anneeEffectifsEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "73",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "anneeEffectifsEtablissement",
+      "undefined" : "Année de validité de l'effectif salarié"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Année de validité de l'effectif salarié de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateCreationEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateCreationEtablissement",
+      "undefined" : "Date de début d'une période d'historique d'un établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Année et mois de création de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#prenom1UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "76",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prenom1UniteLegale",
+      "undefined" : "Prénom 1"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Premier prénom déclaré"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nomenclatureActivitePrincipaleEtablissement",
+      "undefined" : "Nomenclature d’activité"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique la nomenclature d’activité correspondant à la variable activitePrincipaleEtablissement (NAFRev2, NAFRev1, NAF1993, NAP)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_ligne",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_ligne",
+      "undefined" : "geo_ligne"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUsuelle1UniteLegale",
+      "undefined" : "Dénomination usuelle de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#latitude",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "latitude",
+      "undefined" : "Latitude"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Latitude issue du géocodage"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libellePaysEtranger2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libellePaysEtranger2Etablissement",
+      "undefined" : "Libellé du pays de l’adresse secondaire pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé du pays de localisation de l’adresse secondaire de l'établissement si celui-ci est à l’étranger. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codeCommuneEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/2028028",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeCommuneEtablissement",
+      "undefined" : "Code commune de l'établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Code commune (COG) de localisation de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#enseigne2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "enseigne2Etablissement",
+      "undefined" : "Enseigne ligne 2"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Deuxième ligne d’enseigne de l’établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#activitePrincipale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/3281579",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "activitePrincipale",
+      "undefined" : "Activité principale (NAFRev2)"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Code d'activité principale exercée selon la nomenclature NAFRev2."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle2UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUsuelle2UniteLegale",
+      "undefined" : "Dénomination usuelle de l’unité légale - deuxième champ"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#identifiantAssociationUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "94",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifiantAssociationUniteLegale",
+      "undefined" : "Numéro au Répertoire National des Associations (RNA)"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Lors de sa déclaration en préfecture, l’association reçoit automatiquement un numéro d’inscription au RNA. Elle doit en outre demander son immatriculation au répertoire Sirene lorsqu'elle souhaite demander des subventions auprès de l'État ou des collectivités territoriales, lorsqu'elle emploie des salariés ou lorsqu'elle exerce des activités qui conduisent au paiement de la TVA ou de l'impôt sur les sociétés."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#complementAdresseEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "complementAdresseEtablissement",
+      "undefined" : "Complément d’adresse"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable est un élément constitutif de l’adresse. C'est une variable facultative qui précise l'adresse avec une indication d'étage, d'appartement, de porte, de N° de boîte à lettres, la désignation d'un bâtiment, d'un escalier, d'une entrée, d'un bloc, le nom d'une résidence, d'un ensemble..."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codePostal2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codePostal2Etablissement",
+      "undefined" : "Code postal de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code postal de l’adresse secondaire de l’établissement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#prenom3UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "100",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prenom3UniteLegale",
+      "undefined" : "Prénom 3"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Troisième prénom déclaré"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCommuneEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCommuneEtablissement",
+      "undefined" : "Libellé de la commune"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé de la commune de localisation de l'établissement si celui-ci n’est pas à l’étranger. C’est un élément constitutif de l’adresse."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_type",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "103",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_type",
+      "undefined" : "geo_type"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "'housenumber' si les coordonnées géographiques correspondent à la combinaison rue + numéro, 'street' si les coordonnées géographiques ne correspondant qu'à la rue."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCommuneEtrangerEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCommuneEtrangerEtablissement",
+      "undefined" : "Libellé de la commune pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable est un élément constitutif de l’adresse pour les établissements situés sur le territoire étranger (la variable codeCommuneEtablissement est vide)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nomUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nomUniteLegale",
+      "undefined" : "Nom de naissance de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé le nom de naissance pour une personne physique. Cette variable est à null pour les personnes morales. Le répertoire Sirene gère des caractères majuscules non accentués et les seuls caractères spéciaux tiret (-) et apostrophe.Le nom peut être à null (cas des unités purgées, première date de début du nom postérieure à la première date de début d'une autre variable historisée)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#sexeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "108",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sexeUniteLegale",
+      "undefined" : "Caractère féminin ou masculin de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle3UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUsuelle3UniteLegale",
+      "undefined" : "Dénomination usuelle de l’unité légale - troisième champ"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#prenomUsuelUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "111",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prenomUsuelUniteLegale",
+      "undefined" : "Prénom usuel de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Le prénom usuel est le prénom par lequel une personne choisit de se faire appeler dans la vie courante, parmi l'ensemble de ceux qui lui ont été donnés à sa naissance et qui sont inscrits à l'état civil. Il correspond généralement au prenom1UniteLegale. Cette variable est à null pour les personnes morales."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nicSiegeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "115",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nicSiegeUniteLegale",
+      "undefined" : "Numéro interne de classement de l'établissement siège"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Le siège d’une unité légale est le lieu où sont centralisées l’administration et la direction effective de l’unité légale. À un instant donné, chaque unité légale a un seul siège."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#prenom4UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "119",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prenom4UniteLegale",
+      "undefined" : "Prénom 4"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Quatrième prénom déclaré"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateDernierTraitementUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateDernierTraitementUniteLegale",
+      "undefined" : "Date de traitement de la dernière mise à jour"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Date du dernier traitement de l’unité légale dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#enseigne1Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "117",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "enseigne1Etablissement",
+      "undefined" : "Enseigne ligne 1"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Première ligne d’enseigne de l’établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#trancheEffectifs",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "125",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "trancheEffectifs",
+      "undefined" : "Tranche d'effectif salarié (TEF)"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Il s’agit d’une variable statistique, millésimée au 31/12 d’une année donnée (voir variable anneeEffectifsEtablissement)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nic",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "128",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nic",
+      "undefined" : "NIC"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Numéro interne de classement de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelleEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUsuelleEtablissement",
+      "undefined" : "Dénomination usuelle de l’établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable désigne le nom sous lequel l'établissement est connu du grand public. Cet élément d'identification de l'établissement a été enregistré au niveau établissement depuis l'application de la norme d'échanges CFE de 2008. Avant la norme 2008, la dénomination usuelle était enregistrée au niveau de l'unité légale sur trois champs (cf. variables denominationUsuelle1UniteLegale à denominationUsuelle3UniteLegale dans le descriptif des variables du fichier StockUniteLegale)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#siren",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "126",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "siren",
+      "undefined" : "Numéro Siren"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Un numéro d’identité de l’unité légale est attribué par l’Insee à toutes les personnes physiques ou morales inscrites au répertoire ainsi qu’à leurs établissements : le numéro Siren. Ce numéro unique est « attribué soit à l’occasion des demandes d’immatriculation au registre du commerce et des sociétés ou des déclarations effectuées au répertoire des métiers, soit à la demande d’administrations » (article R123-224 du code de commerce). Lors de sa création, une unité légale se voit attribuer un numéro Siren de 9 chiffres."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateCreation",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateCreation",
+      "undefined" : "Date de création"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Date de création de l'unité légale ou de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libellePaysEtrangerEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "69",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libellePaysEtrangerEtablissement",
+      "undefined" : "Libellé du pays pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé du pays de localisation de l'établissement si celui-ci est à l’étranger."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "etablissement",
+      "undefined" : "Établissement"
+    },
+    "domain" : "0",
+    "subproperty" : [ "47" ],
+    "comment" : {
+      "undefined" : "Un établissement de l'unité légale"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#siret",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "123",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "siret",
+      "undefined" : "Numéro Siret"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Le numéro Siret est le numéro unique d’identification attribué à chaque établissement par l’Insee. Ce numéro est un simple numéro d’ordre, composé de 14 chiffres non significatifs : les neuf premiers correspondent au numéro Siren de l’entreprise dont l’établissement dépend et les cinq derniers à un numéro interne de classement (Nic). Une entreprise est constituée d’autant d’établissements qu’il y a de lieux différents où elle exerce son activité. L’établissement est fermé quand l’activité cesse dans l’établissement concerné ou lorsque l’établissement change d’adresse."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#prenom2UniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "135",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prenom2UniteLegale",
+      "undefined" : "Prénom 2"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Deuxième prénom déclaré"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateCreationUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateCreationUniteLegale",
+      "undefined" : "Année et mois de création"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Année et mois de création de l'entreprise"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#distributionSpeciale2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "distributionSpeciale2Etablissement",
+      "undefined" : "Distribution spéciale de l’adresse secondaire de l’établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans  le  cas  où  l’établissement  dispose  d’une  entrée  secondaire, la  distribution  spéciale  reprend  les éléments particuliers qui accompagnent l’adresse secondaire de distribution spéciale. C’est un élément constitutif de l’adresse secondaire."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#statutDiffusionUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "statutDiffusionUniteLegale",
+      "undefined" : "Statut de diffusion de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Seules les unités légales diffusibles sont accessibles à tout public (statutDiffusionUniteLegale=O)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codeCedex2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "144",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeCedex2Etablissement",
+      "undefined" : "Code cedex de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, c’est un élément constitutif de l’adresse secondaire. Exemple à Saint Nazaire : 44601"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleVoieEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "146",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleVoieEtablissement",
+      "undefined" : "Libellé de voie de localisation"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Libellé de voie de localisation de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nombrePeriodesEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "148",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nombrePeriodesEtablissement",
+      "undefined" : "Nombre de périodes de l’établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette  variable  donne le nombre  de  périodes [dateDebut,dateFin] de  l’établissement. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’établissement n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#anneeCategorieEntreprise",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "150",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "anneeCategorieEntreprise",
+      "undefined" : "Année de validité de la catégorie d’entreprise"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne l’année de validité correspondant à la catégorie d'entreprise diffusée."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codePaysEtrangerEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/2028273",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codePaysEtrangerEtablissement",
+      "undefined" : "Code pays pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable désigne le code du pays de localisation de l'établissement pour les adresses à l'étranger. La variable codePaysEtrangerEtablissement commence toujours par 99 si elle est renseignée. Les 3 caractères suivants sont le code du pays étranger"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "139",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nomenclatureActivitePrincipaleUniteLegale",
+      "undefined" : "Nomenclature d’activité"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable indique la nomenclature d’activité correspondant à la variable activitePrincipaleUniteLegale (NAFRev2, NAFRev1, NAF1993, NAP)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#typeVoieEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "154",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "typeVoieEtablissement",
+      "undefined" : "Type de voie"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Si le type de voie est d'une longueur inférieure ou égale à 4 caractères, le type de voie n'est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codePaysEtranger2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.insee.fr/fr/information/2028273",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codePaysEtranger2Etablissement",
+      "undefined" : "Code pays de l’adresse secondaire pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code du pays de localisation de l'adresse secondaire de l'établissement pour les adresses à l'étranger"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nombrePeriodesUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "137",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nombrePeriodesUniteLegale",
+      "undefined" : "Nombre de périodes de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable donne le nombre de périodes [dateDebut,dateFin] de l’unité légale. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’unité légale n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#indiceRepetitionEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "indiceRepetitionEtablissement",
+      "undefined" : "Indice de répétition"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indice de répétition"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#distributionSpecialeEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "distributionSpecialeEtablissement",
+      "undefined" : "Distribution spéciale de l’établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "La distribution spéciale reprend les éléments particuliers qui accompagnent une adresse de distribution spéciale. C’est un élément constitutif de l’adresse."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_score",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_score",
+      "undefined" : "Géoscore"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Score de la qualité du géocode"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#numeroVoieEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "136",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numeroVoieEtablissement",
+      "undefined" : "Numéro de voie"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Si plusieurs numéros de voie sont indiqués (5-7, 5 à 7 ...), l'information complète (5-7) ou (5 à 7) figure en complément d'adresse et le premier des numéros (5 dans l'exemple) est porté dans la variable numeroVoieEtablissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCedexEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCedexEtablissement",
+      "undefined" : "Libellé du code cedex"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Code CEDEX. Exemple : ST NAZAIRE CEDEX. Ce libellé est le libellé utilisé dans la ligne 6 d’adresse pour l’acheminement postal."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleVoie2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleVoie2Etablissement",
+      "undefined" : "Libellé de voie de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Cette variable indique le libellé de la voie de l’adresse secondaire de l'établissement. C’est un élément constitutif de l’adresse secondaire."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#libelleCommuneEtranger2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "88",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "libelleCommuneEtranger2Etablissement",
+      "undefined" : "Libellé de la commune de l’adresse secondaire pour un établissement situé à l’étranger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable est un élément constitutif de l’adresse secondaire pour les établissements situés sur le territoire étranger (la variable codeCommune2Etablissement est vide)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#activitePrincipaleRegistreMetiersEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "168",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "activitePrincipaleRegistreMetiersEtablissement",
+      "undefined" : "Activité principale au registre des métiers"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Activité principale au registre des métiers"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#complementAdresse2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "complementAdresse2Etablissement",
+      "undefined" : "Complément d’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable est un élément constitutif de l’adresse secondaire."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_id",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "112",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_id",
+      "undefined" : "geo_id"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#codePostalEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codePostalEtablissement",
+      "undefined" : "Code postal"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Code postal"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "171"
+  }, {
+    "range" : "160",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "160",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "8",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_adresse",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_adresse",
+      "undefined" : "geo_adresse"
+    },
+    "domain" : "8",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "177"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#anneeEffectifsUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "164",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "anneeEffectifsUniteLegale",
+      "undefined" : "Année de validité de l'effectif salarié"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Seule la dernière année de mise à jour de l’effectif salarié de l’unité légale est donnée si celle-ci est inférieure ou égale à l’année d’interrogation-3. Ainsi une interrogation en 2018 ne renverra la dernière année de mise à jour de l’effectif que si cette année est supérieure ou égale à 2015."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#sigleUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "121",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sigleUniteLegale",
+      "undefined" : "Sigle de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Un sigle est une forme réduite de la raison sociale ou de la dénomination d'une personne morale ou d'un organisme public. Cette variable est à null pour les personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#caractereEmployeurEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "165",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "caractereEmployeurEtablissement",
+      "undefined" : "Caractère employeur de l’établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Lors de sa formalité d’ouverture, le déclarant indique si l’établissement aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’établissement en « employeur »."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "183"
+  } ]
+}
