@@ -11,16 +11,16 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://sireneld.io/vocab/sirene#">
-        <ns:license rdf:resource="http://unlicense.org"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-29</terms:created>
-        <terms:creator rdf:resource="http://colin.maudry.com/rdf/colin-maudry#me"/>
+        <terms:creator rdf:resource="https://colin.maudry.com/foaf.rdf#me"/>
         <terms:description xml:lang="fr">L&apos;ontologie SIRENE est dérivée des termes utilisés par l&apos;INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr.</terms:description>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-11</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-10</terms:modified>
         <terms:title>Ontologie SIRENE</terms:title>
         <vann:preferredNamespacePrefix>sirene</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://sireneld.io/vocab/sirene#"/>
         <rdfs:seeAlso rdf:resource="https://sireneld.io"/>
-        <rdfs:seeAlso rdf:resource="https://sireneld.io/vocab/sirene#"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/ColinMaudry/sirene-ld"/>
         <rdfs:seeAlso rdf:resource="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/"/>
     </owl:Ontology>
     
@@ -1407,22 +1407,6 @@
         <rdfs:isDefinedBy rdf:resource="https://sireneld.io/vocab/sirene#"/>
         <rdfs:label>Unité légale</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://colin.maudry.com/rdf/colin-maudry#me">
-        <foaf:mbox rdf:resource="mailto:colin@maudry.com"/>
-        <foaf:name>Colin Maudry</foaf:name>
-    </rdf:Description>
 </rdf:RDF>
 
 

@@ -7,7 +7,7 @@
       "undefined" : "Ontologie SIRENE"
     },
     "iri" : "https://sireneld.io/vocab/sirene#",
-    "author" : [ "http://colin.maudry.com/rdf/colin-maudry#me" ],
+    "author" : [ "https://colin.maudry.com/foaf.rdf#me" ],
     "description" : {
       "fr" : "L'ontologie SIRENE est dérivée des termes utilisés par l'INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr."
     },
@@ -15,13 +15,13 @@
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
-        "value" : "http://unlicense.org",
+        "value" : "https://creativecommons.org/licenses/by-sa/4.0/",
         "type" : "iri"
       } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "http://colin.maudry.com/rdf/colin-maudry#me",
+        "value" : "https://colin.maudry.com/foaf.rdf#me",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -39,7 +39,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2018-11-11",
+        "value" : "2020-05-10",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -57,7 +57,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
+        "value" : "https://github.com/ColinMaudry/sirene-ld",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -203,7 +203,7 @@
     "id" : "116",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "81",
+    "id" : "80",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "92",
@@ -224,7 +224,7 @@
     "id" : "121",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "109",
+    "id" : "108",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "123",
@@ -245,7 +245,7 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "75",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "136",
@@ -497,12 +497,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/information/1730869",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "value" : "https://www.insee.fr/fr/information/1730869",
         "type" : "iri"
       } ]
     },
@@ -733,7 +733,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
+    "id" : "80",
     "label" : {
       "IRI-based" : "string"
     }
@@ -785,7 +785,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
+    "id" : "108",
     "label" : {
       "IRI-based" : "string"
     }
@@ -848,7 +848,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "75",
     "label" : {
       "IRI-based" : "string"
     }
@@ -915,12 +915,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "value" : "https://www.insee.fr/fr/information/1730869",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/information/1730869",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
         "type" : "iri"
       } ]
     },
@@ -1224,7 +1224,7 @@
     "id" : "74",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "75",
+    "id" : "76",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "77",
@@ -1233,7 +1233,7 @@
     "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
@@ -1281,7 +1281,7 @@
     "id" : "107",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "108",
+    "id" : "109",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
@@ -1945,31 +1945,9 @@
     "attributes" : [ "datatype" ],
     "id" : "72"
   }, {
-    "iri" : "https://sireneld.io/vocab/sirene#dateCreationEtablissement",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "42",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "dateCreationEtablissement",
-      "undefined" : "Date de début d'une période d'historique d'un établissement"
-    },
-    "domain" : "8",
-    "comment" : {
-      "undefined" : "La date de création ne correspond pas obligatoirement à dateDebut de la première période de l'établissement, certaines variables historisées pouvant posséder des dates de début soit au 1900-01-01, soit antérieures à la date de création."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "74"
-  }, {
     "iri" : "https://sireneld.io/vocab/sirene#prenom1UniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "76",
+    "range" : "75",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1987,7 +1965,29 @@
       "undefined" : "Premier prénom déclaré"
     },
     "attributes" : [ "datatype" ],
-    "id" : "75"
+    "id" : "74"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#dateCreationEtablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateCreationEtablissement",
+      "undefined" : "Date de début d'une période d'historique d'un établissement"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Année et mois de création de l'établissement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleEtablissement",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -2011,6 +2011,25 @@
     "attributes" : [ "datatype" ],
     "id" : "77"
   }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_ligne",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_ligne",
+      "undefined" : "geo_ligne"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
     "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "23",
@@ -2031,26 +2050,7 @@
       "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
     },
     "attributes" : [ "datatype" ],
-    "id" : "79"
-  }, {
-    "iri" : "https://sireneld.io/vocab/sirene#geo_ligne",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "81",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "geo_ligne",
-      "undefined" : "geo_ligne"
-    },
-    "domain" : "8",
-    "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "81"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#latitude",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -2372,6 +2372,28 @@
     "attributes" : [ "datatype" ],
     "id" : "105"
   }, {
+    "iri" : "https://sireneld.io/vocab/sirene#sexeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "108",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sexeUniteLegale",
+      "undefined" : "Caractère féminin ou masculin de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
     "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle3UniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "25",
@@ -2392,29 +2414,7 @@
       "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
     },
     "attributes" : [ "datatype" ],
-    "id" : "107"
-  }, {
-    "iri" : "https://sireneld.io/vocab/sirene#sexeUniteLegale",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "109",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "sexeUniteLegale",
-      "undefined" : "Caractère féminin ou masculin de la personne physique"
-    },
-    "domain" : "0",
-    "comment" : {
-      "undefined" : "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "109"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#prenomUsuelUniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",

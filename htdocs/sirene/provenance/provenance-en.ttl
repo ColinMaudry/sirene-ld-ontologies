@@ -3,8 +3,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <..\index-en.html> a prov:Entity;
 	 dc:title "Ontologie SIRENE";
-	 prov:wasAttributedTo <http://colin.maudry.com/rdf/colin-maudry#me>;
-	 dc:creator <http://colin.maudry.com/rdf/colin-maudry#me>;
+	 prov:wasAttributedTo <https://colin.maudry.com/foaf.rdf#me>;
+	 dc:creator <https://colin.maudry.com/foaf.rdf#me>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2018-11-11";
+	 prov:wasGeneratedAt "2020-05-10";
 .
