@@ -203,7 +203,7 @@
     "id" : "116",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "92",
@@ -224,7 +224,7 @@
     "id" : "121",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "108",
+    "id" : "109",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "123",
@@ -293,7 +293,7 @@
     "id" : "128",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "160",
+    "id" : "161",
     "type" : "owl:Class"
   }, {
     "id" : "73",
@@ -344,7 +344,7 @@
     "id" : "154",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "68",
+    "id" : "67",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
@@ -497,12 +497,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "value" : "https://www.insee.fr/fr/information/1730869",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/information/1730869",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
         "type" : "iri"
       } ]
     },
@@ -592,12 +592,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
+        "value" : "https://www.insee.fr/fr/information/1730869",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.insee.fr/fr/information/1730869",
+        "value" : "https://www.insee.fr/fr/metadonnees/definition/c1057",
         "type" : "iri"
       } ]
     },
@@ -733,7 +733,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "80",
+    "id" : "81",
     "label" : {
       "IRI-based" : "string"
     }
@@ -785,7 +785,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "108",
+    "id" : "109",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1002,7 +1002,7 @@
     "comment" : {
       "undefined" : "Code issue d'une nomenclature officielle"
     },
-    "id" : "160"
+    "id" : "161"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1093,7 +1093,7 @@
       "undefined" : "Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active ». Pour les personnes morales, la cessation administrative est, en théorie, définitive, l’état administratif « Cessée » est irréversible."
     },
     "id" : "11",
-    "superClasses" : [ "160" ]
+    "superClasses" : [ "161" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1135,7 +1135,7 @@
       "undefined" : "Tranche d'effectif salarié (TEF). Cette variable correspond à la tranche d'effectif salarié de l'unité légale ou de l'établissement. C'est une variable statistique, millésimée au 31/12 d'une année donnée, majoritairement l'année n-2. Elle est à rapprocher de sa date de validité, c'est-à-dire de la date de mise à jour de l'effectif salarié de l'unité légale ou de l'établissement."
     },
     "id" : "125",
-    "superClasses" : [ "160" ]
+    "superClasses" : [ "161" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1146,7 +1146,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "68",
+    "id" : "67",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1212,7 +1212,7 @@
     "id" : "66",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "67",
+    "id" : "68",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "70",
@@ -1233,7 +1233,7 @@
     "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "81",
+    "id" : "80",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
@@ -1281,7 +1281,7 @@
     "id" : "107",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "109",
+    "id" : "108",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
@@ -1371,7 +1371,7 @@
     "id" : "159",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "161",
+    "id" : "160",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "162",
@@ -1741,28 +1741,6 @@
     "attributes" : [ "object" ],
     "id" : "47"
   }, {
-    "iri" : "https://sireneld.io/vocab/sirene#denominationUniteLegale",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "32",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "denominationUniteLegale",
-      "undefined" : "Nom ou raison sociale"
-    },
-    "domain" : "0",
-    "comment" : {
-      "undefined" : "Cette variable désigne la raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale. Cette variable est à null pour les personnes physiques."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "52"
-  }, {
     "iri" : "https://sireneld.io/vocab/sirene#dateDebut",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "29",
@@ -1781,6 +1759,28 @@
     "domain" : "0",
     "comment" : {
       "undefined" : "Date de début de la période au cours de laquelle toutes les variables historisées de l'unité légale ou de l'établissement restent inchangées."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#denominationUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominationUniteLegale",
+      "undefined" : "Nom ou raison sociale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable désigne la raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale. Cette variable est à null pour les personnes physiques."
     },
     "attributes" : [ "datatype" ],
     "id" : "53"
@@ -1857,6 +1857,28 @@
     "attributes" : [ "datatype" ],
     "id" : "63"
   }, {
+    "iri" : "https://sireneld.io/vocab/sirene#typeVoie2Etablissement",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "typeVoie2Etablissement",
+      "undefined" : "Type de voie de l’adresse secondaire"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Si le type de voie est d'une longueur inférieure ou égale à 4 caractères, le type de voie n'est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
     "iri" : "https://sireneld.io/vocab/sirene#economieSocialeSolidaireUniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "5",
@@ -1877,29 +1899,7 @@
       "undefined" : "Cette variable indique si l'entreprise appartient au   champ   de l’économie sociale et solidaire. La loi n° 2014-856 du 31 juillet 2014 définit officiellement le périmètre de l’économie sociale et solidaire (ESS). "
     },
     "attributes" : [ "datatype" ],
-    "id" : "66"
-  }, {
-    "iri" : "https://sireneld.io/vocab/sirene#typeVoie2Etablissement",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "68",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "typeVoie2Etablissement",
-      "undefined" : "Type de voie de l’adresse secondaire"
-    },
-    "domain" : "8",
-    "comment" : {
-      "undefined" : "Si le type de voie est d'une longueur inférieure ou égale à 4 caractères, le type de voie n'est pas abrégé. Ainsi, RUE ou QUAI sont écrits tels quels, alors que AVENUE est abrégée en AV."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "67"
+    "id" : "68"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#libelleCedex2Etablissement",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -1962,7 +1962,7 @@
     },
     "domain" : "8",
     "comment" : {
-      "undefined" : "Année et mois de création de l'établissement"
+      "undefined" : "La date de création ne correspond pas obligatoirement à dateDebut de la première période de l'établissement, certaines variables historisées pouvant posséder des dates de début soit au 1900-01-01, soit antérieures à la date de création."
     },
     "attributes" : [ "datatype" ],
     "id" : "74"
@@ -2011,25 +2011,6 @@
     "attributes" : [ "datatype" ],
     "id" : "77"
   }, {
-    "iri" : "https://sireneld.io/vocab/sirene#geo_ligne",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "80",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "geo_ligne",
-      "undefined" : "geo_ligne"
-    },
-    "domain" : "8",
-    "attributes" : [ "datatype" ],
-    "id" : "79"
-  }, {
     "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "23",
@@ -2050,7 +2031,26 @@
       "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
     },
     "attributes" : [ "datatype" ],
-    "id" : "81"
+    "id" : "79"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#geo_ligne",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "81",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo_ligne",
+      "undefined" : "geo_ligne"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#latitude",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -2372,28 +2372,6 @@
     "attributes" : [ "datatype" ],
     "id" : "105"
   }, {
-    "iri" : "https://sireneld.io/vocab/sirene#sexeUniteLegale",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "108",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "sexeUniteLegale",
-      "undefined" : "Caractère féminin ou masculin de la personne physique"
-    },
-    "domain" : "0",
-    "comment" : {
-      "undefined" : "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "107"
-  }, {
     "iri" : "https://sireneld.io/vocab/sirene#denominationUsuelle3UniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "25",
@@ -2414,7 +2392,29 @@
       "undefined" : "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008."
     },
     "attributes" : [ "datatype" ],
-    "id" : "109"
+    "id" : "107"
+  }, {
+    "iri" : "https://sireneld.io/vocab/sirene#sexeUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sexeUniteLegale",
+      "undefined" : "Caractère féminin ou masculin de la personne physique"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#prenomUsuelUniteLegale",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -2951,6 +2951,28 @@
     "attributes" : [ "datatype" ],
     "id" : "153"
   }, {
+    "iri" : "https://sireneld.io/vocab/sirene#nombrePeriodesUniteLegale",
+    "baseIri" : "https://sireneld.io/vocab/sirene",
+    "range" : "137",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sireneld.io/vocab/sirene#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nombrePeriodesUniteLegale",
+      "undefined" : "Nombre de périodes de l’unité légale"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Cette variable donne le nombre de périodes [dateDebut,dateFin] de l’unité légale. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’unité légale n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
     "iri" : "https://sireneld.io/vocab/sirene#codePaysEtranger2Etablissement",
     "baseIri" : "https://sireneld.io/vocab/sirene",
     "range" : "59",
@@ -2975,28 +2997,6 @@
     "domain" : "8",
     "comment" : {
       "undefined" : "Dans le cas où l’établissement dispose d’une entrée secondaire, cette variable désigne le code du pays de localisation de l'adresse secondaire de l'établissement pour les adresses à l'étranger"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "155"
-  }, {
-    "iri" : "https://sireneld.io/vocab/sirene#nombrePeriodesUniteLegale",
-    "baseIri" : "https://sireneld.io/vocab/sirene",
-    "range" : "137",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://sireneld.io/vocab/sirene#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "nombrePeriodesUniteLegale",
-      "undefined" : "Nombre de périodes de l’unité légale"
-    },
-    "domain" : "0",
-    "comment" : {
-      "undefined" : "Cette variable donne le nombre de périodes [dateDebut,dateFin] de l’unité légale. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’unité légale n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement)."
     },
     "attributes" : [ "datatype" ],
     "id" : "156"
@@ -3087,7 +3087,7 @@
       "undefined" : "Si plusieurs numéros de voie sont indiqués (5-7, 5 à 7 ...), l'information complète (5-7) ou (5 à 7) figure en complément d'adresse et le premier des numéros (5 dans l'exemple) est porté dans la variable numeroVoieEtablissement"
     },
     "attributes" : [ "datatype" ],
-    "id" : "161"
+    "id" : "160"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#libelleCedexEtablissement",
     "baseIri" : "https://sireneld.io/vocab/sirene",
@@ -3240,29 +3240,29 @@
     "attributes" : [ "datatype" ],
     "id" : "171"
   }, {
-    "range" : "160",
+    "range" : "161",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "172"
   }, {
-    "range" : "160",
+    "range" : "161",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "173"
   }, {
     "range" : "8",
     "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
     "range" : "0",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
     "range" : "1",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "176"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#geo_adresse",
@@ -3287,7 +3287,7 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "178"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#anneeEffectifsUniteLegale",
@@ -3314,12 +3314,12 @@
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "180"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
     "iri" : "https://sireneld.io/vocab/sirene#sigleUniteLegale",

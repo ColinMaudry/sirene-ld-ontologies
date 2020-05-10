@@ -17,6 +17,7 @@ java -jar $widocoJar -ontFile sirene.ttl -outFolder sirene -htaccess -oops -rewr
 # Fix paths
 sed -i 's/index\-en.html/index-fr.html/g' sirene/.htaccess
 
-
+# Move to htdocs (hosting on Gandi simple server)
+mv sirene htdocs
 
 
