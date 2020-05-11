@@ -4,12 +4,10 @@ Les ontologies liées au projet [sireneLD](https://github.com/colinmaudry/sirene
 
 Les ontologies intégrées :
 
-- `sirene` ([documentation](https://sireneld.io/vocab/sirene)) : classes et propriétés utilisées pour décrire les unités légales et les établissements présents dans la base SIRENE
-
+- `sirene` ([documentation](https://sireneld.io/vocab/sirene)) : termes utilisés pour décrire les unités légales et les établissements présents dans la base SIRENE
+- `compub` ([documentation](https://sireneld.io/vocab/compub)) : terles utilisés pour décrire les contrats de commande publique français
 
 ## HTML publication
-
-
 
 ### Requirements
 
@@ -17,7 +15,7 @@ Les ontologies intégrées :
 
 ### Generating HTML
 
-To generate HTML in `/html` using [Widoco](https://github.com/dgarijo/Widoco) by Daniel Garijo:
+To generate HTML using [Widoco](https://github.com/dgarijo/Widoco) by Daniel Garijo:
 
 ```
 scripts/generate-documentation.sh
