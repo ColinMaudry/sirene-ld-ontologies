@@ -1,0 +1,234 @@
+<https://sireneld.io/vocab/compub#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://sireneld.io/vocab/compub#acheteur
+<https://sireneld.io/vocab/compub#acheteur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sireneld.io/vocab/compub#acheteur> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#acheteur> <http://www.w3.org/2000/01/rdf-schema#range> <https://sireneld.io/vocab/compub#Acheteur> .
+<https://sireneld.io/vocab/compub#acheteur> <http://www.w3.org/2000/01/rdf-schema#label> "acheteur" .
+# 
+# https://sireneld.io/vocab/compub#autoriteConcedante
+<https://sireneld.io/vocab/compub#autoriteConcedante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sireneld.io/vocab/compub#autoriteConcedante> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#autoriteConcedante> <http://www.w3.org/2000/01/rdf-schema#range> <https://sireneld.io/vocab/compub#AutoriteConcedante> .
+<https://sireneld.io/vocab/compub#autoriteConcedante> <http://www.w3.org/2000/01/rdf-schema#label> "autorité concédante" .
+# 
+# https://sireneld.io/vocab/compub#codeCPV
+<https://sireneld.io/vocab/compub#codeCPV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sireneld.io/vocab/compub#codeCPV> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#codeCPV> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://sireneld.io/vocab/compub#codeCPV> <http://www.w3.org/2000/01/rdf-schema#label> "codeCPV" .
+# 
+# https://sireneld.io/vocab/compub#concessionnaire
+<https://sireneld.io/vocab/compub#concessionnaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sireneld.io/vocab/compub#concessionnaire> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#concessionnaire> <http://www.w3.org/2000/01/rdf-schema#range> <https://sireneld.io/vocab/compub#Concessionnaire> .
+<https://sireneld.io/vocab/compub#concessionnaire> <http://www.w3.org/2000/01/rdf-schema#label> "concessionnaire" .
+# 
+# https://sireneld.io/vocab/compub#titulaire
+<https://sireneld.io/vocab/compub#titulaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sireneld.io/vocab/compub#titulaire> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#titulaire> <http://www.w3.org/2000/01/rdf-schema#range> <https://sireneld.io/vocab/compub#Titulaire> .
+<https://sireneld.io/vocab/compub#titulaire> <http://www.w3.org/2000/01/rdf-schema#label> "titulaire" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://sireneld.io/vocab/compub#dateDebutExecution
+<https://sireneld.io/vocab/compub#dateDebutExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#dateDebutExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#dateDebutExecution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#dateDebutExecution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://sireneld.io/vocab/compub#dateDebutExecution> <http://www.w3.org/2000/01/rdf-schema#label> "date début d'exécution" .
+# 
+# https://sireneld.io/vocab/compub#dateNotification
+<https://sireneld.io/vocab/compub#dateNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#dateNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#dateNotification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#dateNotification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://sireneld.io/vocab/compub#dateNotification> <http://www.w3.org/2000/01/rdf-schema#label> "date de notification" .
+# 
+# https://sireneld.io/vocab/compub#datePublicationDonnees
+<https://sireneld.io/vocab/compub#datePublicationDonnees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#datePublicationDonnees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#datePublicationDonnees> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#datePublicationDonnees> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://sireneld.io/vocab/compub#datePublicationDonnees> <http://www.w3.org/2000/01/rdf-schema#label> "date publication donnees" .
+# 
+# https://sireneld.io/vocab/compub#dateSignature
+<https://sireneld.io/vocab/compub#dateSignature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#dateSignature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#dateSignature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#dateSignature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://sireneld.io/vocab/compub#dateSignature> <http://www.w3.org/2000/01/rdf-schema#label> "date signature" .
+# 
+# https://sireneld.io/vocab/compub#duree
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#label> "durée" .
+# 
+# https://sireneld.io/vocab/compub#formePrix
+<https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/2000/01/rdf-schema#label> "forme du prix" .
+# 
+# https://sireneld.io/vocab/compub#identifiant
+<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#label> "identifiant" .
+# 
+# https://sireneld.io/vocab/compub#montant
+<https://sireneld.io/vocab/compub#montant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#montant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#montant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#montant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sireneld.io/vocab/compub#montant> <http://www.w3.org/2000/01/rdf-schema#label> "montant" .
+# 
+# https://sireneld.io/vocab/compub#montantSubventionsPubliques
+<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#label> "montant subventions publiques" .
+# 
+# https://sireneld.io/vocab/compub#objet
+<https://sireneld.io/vocab/compub#objet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#objet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#objet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#objet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#objet> <http://www.w3.org/2000/01/rdf-schema#label> "objet" .
+# 
+# https://sireneld.io/vocab/compub#procedure
+<https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#label> "procédure" .
+# 
+# https://sireneld.io/vocab/compub#valeurGlobale
+<https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/2000/01/rdf-schema#label> "valeur globale" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# https://sireneld.io/vocab/compub#AccordCadre
+<https://sireneld.io/vocab/compub#AccordCadre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#AccordCadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#AccordCadre> <http://www.w3.org/2000/01/rdf-schema#label> "Accord-cadre" .
+# 
+# https://sireneld.io/vocab/compub#Acheteur
+<https://sireneld.io/vocab/compub#Acheteur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#Acheteur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#AcheteurPublic> .
+<https://sireneld.io/vocab/compub#Acheteur> <http://www.w3.org/2000/01/rdf-schema#label> "Acheteur" .
+# 
+# https://sireneld.io/vocab/compub#AcheteurPublic
+<https://sireneld.io/vocab/compub#AcheteurPublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#AcheteurPublic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirene#Etablissement> .
+<https://sireneld.io/vocab/compub#AcheteurPublic> <http://www.w3.org/2000/01/rdf-schema#label> "Acheteur public" .
+# 
+# https://sireneld.io/vocab/compub#AutoriteConcedante
+<https://sireneld.io/vocab/compub#AutoriteConcedante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#AutoriteConcedante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#AcheteurPublic> .
+<https://sireneld.io/vocab/compub#AutoriteConcedante> <http://www.w3.org/2000/01/rdf-schema#label> "Autorité concédante" .
+# 
+# https://sireneld.io/vocab/compub#ConcessionService
+<https://sireneld.io/vocab/compub#ConcessionService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#ConcessionService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#ConcessionService> <http://www.w3.org/2000/01/rdf-schema#label> "Concession de service" .
+# 
+# https://sireneld.io/vocab/compub#ConcessionServicePublic
+<https://sireneld.io/vocab/compub#ConcessionServicePublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#ConcessionServicePublic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#ConcessionServicePublic> <http://www.w3.org/2000/01/rdf-schema#label> "Concession de service public" .
+# 
+# https://sireneld.io/vocab/compub#ConcessionTravaux
+<https://sireneld.io/vocab/compub#ConcessionTravaux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#ConcessionTravaux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#ConcessionTravaux> <http://www.w3.org/2000/01/rdf-schema#label> "Concession de travaux" .
+# 
+# https://sireneld.io/vocab/compub#Concessionnaire
+<https://sireneld.io/vocab/compub#Concessionnaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#Concessionnaire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#Fournisseur> .
+<https://sireneld.io/vocab/compub#Concessionnaire> <http://www.w3.org/2000/01/rdf-schema#label> "Concessionnaire" .
+# 
+# https://sireneld.io/vocab/compub#ContratCommandePublique
+<https://sireneld.io/vocab/compub#ContratCommandePublique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#ContratCommandePublique> <http://www.w3.org/2000/01/rdf-schema#label> "Contrat de commande publique" .
+# 
+# https://sireneld.io/vocab/compub#ContratConcession
+<https://sireneld.io/vocab/compub#ContratConcession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#ContratConcession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#ContratConcession> <http://www.w3.org/2000/01/rdf-schema#label> "Contrat de concession" .
+# 
+# https://sireneld.io/vocab/compub#DelegationServicePublic
+<https://sireneld.io/vocab/compub#DelegationServicePublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#DelegationServicePublic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#DelegationServicePublic> <http://www.w3.org/2000/01/rdf-schema#label> "Délégation de service public" .
+# 
+# https://sireneld.io/vocab/compub#Fournisseur
+<https://sireneld.io/vocab/compub#Fournisseur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#Fournisseur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirene#Etablissement> .
+<https://sireneld.io/vocab/compub#Fournisseur> <http://www.w3.org/2000/01/rdf-schema#label> "Fournisseur" .
+# 
+# https://sireneld.io/vocab/compub#Marche
+<https://sireneld.io/vocab/compub#Marche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#Marche> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#Marche> <http://www.w3.org/2000/01/rdf-schema#label> "Marché" .
+# 
+# https://sireneld.io/vocab/compub#MarchePartenariat
+<https://sireneld.io/vocab/compub#MarchePartenariat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#MarchePartenariat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#MarchePartenariat> <http://www.w3.org/2000/01/rdf-schema#label> "Marché de partenariat" .
+# 
+# https://sireneld.io/vocab/compub#MarchePublic
+<https://sireneld.io/vocab/compub#MarchePublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#MarchePublic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#MarchePublic> <http://www.w3.org/2000/01/rdf-schema#label> "Marché public" .
+# 
+# https://sireneld.io/vocab/compub#MarcheSubsequent
+<https://sireneld.io/vocab/compub#MarcheSubsequent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#MarcheSubsequent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#MarchePublic> .
+<https://sireneld.io/vocab/compub#MarcheSubsequent> <http://www.w3.org/2000/01/rdf-schema#label> "Marché subséquent" .
+# 
+# https://sireneld.io/vocab/compub#Titulaire
+<https://sireneld.io/vocab/compub#Titulaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/compub#Titulaire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/compub#Fournisseur> .
+# 
+# https://sireneld.io/vocab/sirene#Etablissement
+<https://sireneld.io/vocab/sirene#Etablissement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sireneld.io/vocab/sirene#Etablissement> <http://www.w3.org/2000/01/rdf-schema#label> "Etablissement" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
