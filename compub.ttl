@@ -1,0 +1,287 @@
+@prefix : <http://webprotege.stanford.edu/project/Bh7La1NyGFU7OMHfceHDrN#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix compub: <https://sireneld.io/vocab/compub#> .
+@prefix sirene: <https://sireneld.io/vocab/sirene#> .
+@base <http://webprotege.stanford.edu/project/Bh7La1NyGFU7OMHfceHDrN> .
+
+<http://webprotege.stanford.edu/project/Bh7La1NyGFU7OMHfceHDrN> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://sireneld.io/vocab/compub#acheteur
+compub:acheteur rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain compub:MarchePublic ;
+                rdfs:range compub:Acheteur ;
+                rdfs:label "acheteur"@fr .
+
+
+###  https://sireneld.io/vocab/compub#autoriteConcedante
+compub:autoriteConcedante rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain compub:ContratConcession ;
+                          rdfs:range compub:AutoriteConcedante ;
+                          rdfs:label "autorité concédante"@fr .
+
+
+###  https://sireneld.io/vocab/compub#codeCPV
+compub:codeCPV rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain compub:MarchePublic ;
+               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+               rdfs:label "codeCPV"@fr .
+
+
+###  https://sireneld.io/vocab/compub#concessionnaire
+compub:concessionnaire rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain compub:ContratConcession ;
+                       rdfs:range compub:Concessionnaire ;
+                       rdfs:label "concessionnaire"@fr .
+
+
+###  https://sireneld.io/vocab/compub#titulaire
+compub:titulaire rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain compub:MarchePublic ;
+                 rdfs:range compub:Titulaire ;
+                 rdfs:label "titulaire"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                      rdfs:label "identifier"@fr .
+
+
+###  https://sireneld.io/vocab/compub#dateDebutExecution
+compub:dateDebutExecution rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain compub:ContratConcession ;
+                          rdfs:range xsd:dateTime ;
+                          rdfs:label "date début d'exécution"@fr .
+
+
+###  https://sireneld.io/vocab/compub#dateNotification
+compub:dateNotification rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain compub:MarchePublic ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:label "date de notification"@fr .
+
+
+###  https://sireneld.io/vocab/compub#datePublicationDonnees
+compub:datePublicationDonnees rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty ;
+                              rdf:type owl:FunctionalProperty ;
+                              rdfs:domain compub:Contrat ;
+                              rdfs:range xsd:dateTime ;
+                              rdfs:label "date publication donnees"@fr .
+
+
+###  https://sireneld.io/vocab/compub#dateSignature
+compub:dateSignature rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain compub:ContratConcession ;
+                     rdfs:range xsd:dateTime ;
+                     rdfs:label "date signature"@fr .
+
+
+###  https://sireneld.io/vocab/compub#duree
+compub:duree rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain compub:MarchePublic ;
+             rdfs:range xsd:short ;
+             rdfs:label "durée"@fr .
+
+
+###  https://sireneld.io/vocab/compub#formePrix
+compub:formePrix rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:label "forme du prix"@fr .
+
+
+###  https://sireneld.io/vocab/compub#identifiant
+compub:identifiant rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain compub:Contrat ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "identifiant"@fr .
+
+
+###  https://sireneld.io/vocab/compub#montant
+compub:montant rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain compub:MarchePublic ;
+               rdfs:range xsd:decimal ;
+               rdfs:label "montant"@fr .
+
+
+###  https://sireneld.io/vocab/compub#montantSubventionsPubliques
+compub:montantSubventionsPubliques rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                   rdf:type owl:FunctionalProperty ;
+                                   rdfs:domain compub:ContratConcession ;
+                                   rdfs:range xsd:decimal ;
+                                   rdfs:label "montant subventions publiques"@fr .
+
+
+###  https://sireneld.io/vocab/compub#objet
+compub:objet rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain compub:Contrat ;
+             rdfs:range xsd:string ;
+             rdfs:label "objet"@fr .
+
+
+###  https://sireneld.io/vocab/compub#procedure
+compub:procedure rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain compub:Contrat ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "procédure"@fr .
+
+
+###  https://sireneld.io/vocab/compub#valeurGlobale
+compub:valeurGlobale rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain compub:ContratConcession ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "valeur globale"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:label "Concept"@fr .
+
+
+###  https://sireneld.io/vocab/compub#AccordCadre
+compub:AccordCadre rdf:type owl:Class ;
+                   rdfs:subClassOf compub:MarchePublic ;
+                   rdfs:label "Accord-cadre"@fr .
+
+
+###  https://sireneld.io/vocab/compub#Acheteur
+compub:Acheteur rdf:type owl:Class ;
+                rdfs:subClassOf compub:AcheteurPublic ;
+                rdfs:label "Acheteur"@fr .
+
+
+###  https://sireneld.io/vocab/compub#AcheteurPublic
+compub:AcheteurPublic rdf:type owl:Class ;
+                      rdfs:subClassOf sirene:Etablissement ;
+                      rdfs:label "Acheteur public"@fr .
+
+
+###  https://sireneld.io/vocab/compub#AutoriteConcedante
+compub:AutoriteConcedante rdf:type owl:Class ;
+                          rdfs:subClassOf compub:AcheteurPublic ;
+                          rdfs:label "Autorité concédante"@fr .
+
+
+###  https://sireneld.io/vocab/compub#ConcessionService
+compub:ConcessionService rdf:type owl:Class ;
+                         rdfs:subClassOf compub:ContratConcession ;
+                         rdfs:label "Concession de service"@fr .
+
+
+###  https://sireneld.io/vocab/compub#ConcessionServicePublic
+compub:ConcessionServicePublic rdf:type owl:Class ;
+                               rdfs:subClassOf compub:ContratConcession ;
+                               rdfs:label "Concession de service public"@fr .
+
+
+###  https://sireneld.io/vocab/compub#ConcessionTravaux
+compub:ConcessionTravaux rdf:type owl:Class ;
+                         rdfs:subClassOf compub:ContratConcession ;
+                         rdfs:label "Concession de travaux"@fr .
+
+
+###  https://sireneld.io/vocab/compub#Concessionnaire
+compub:Concessionnaire rdf:type owl:Class ;
+                       rdfs:subClassOf compub:Fournisseur ;
+                       rdfs:label "Concessionnaire"@fr .
+
+
+###  https://sireneld.io/vocab/compub#Contrat
+compub:Contrat rdf:type owl:Class ;
+               rdfs:label "Contrat"@fr .
+
+
+###  https://sireneld.io/vocab/compub#ContratConcession
+compub:ContratConcession rdf:type owl:Class ;
+                         rdfs:subClassOf compub:Contrat ;
+                         rdfs:label "Contrat de concession"@fr .
+
+
+###  https://sireneld.io/vocab/compub#DelegationServicePublic
+compub:DelegationServicePublic rdf:type owl:Class ;
+                               rdfs:subClassOf compub:ContratConcession ;
+                               rdfs:label "Délégation de service public"@fr .
+
+
+###  https://sireneld.io/vocab/compub#Fournisseur
+compub:Fournisseur rdf:type owl:Class ;
+                   rdfs:subClassOf sirene:Etablissement ;
+                   rdfs:label "Fournisseur"@fr .
+
+
+###  https://sireneld.io/vocab/compub#MarchePartenariat
+compub:MarchePartenariat rdf:type owl:Class ;
+                         rdfs:subClassOf compub:MarchePublic ;
+                         rdfs:label "Marché de partenariat"@fr .
+
+
+###  https://sireneld.io/vocab/compub#MarchePublic
+compub:MarchePublic rdf:type owl:Class ;
+                    rdfs:subClassOf compub:Contrat ;
+                    rdfs:label "Marché public"@fr .
+
+
+###  https://sireneld.io/vocab/compub#MarcheSubsequent
+compub:MarcheSubsequent rdf:type owl:Class ;
+                        rdfs:subClassOf compub:MarchePublic ;
+                        rdfs:label "Marché subséquent"@fr .
+
+
+###  https://sireneld.io/vocab/compub#Titulaire
+compub:Titulaire rdf:type owl:Class ;
+                 rdfs:subClassOf compub:Fournisseur .
+
+
+###  https://sireneld.io/vocab/compub#March%C3%A9
+<https://sireneld.io/vocab/compub#March%C3%A9> rdf:type owl:Class ;
+                                               rdfs:subClassOf compub:MarchePublic ;
+                                               rdfs:label "Marché"@fr .
+
+
+###  https://sireneld.io/vocab/sirene#Etablissement
+sirene:Etablissement rdf:type owl:Class ;
+                     rdfs:label "Etablissement"@fr .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
