@@ -12,13 +12,27 @@ then
 fi
 
 # Generate documentation
-java -jar $widocoJar -ontFile sirene.ttl -outFolder sirene -htaccess -oops -rewriteAll -lang "fr-en" -webVowl
+for code in sirene compub
+do
+  echo ""
+  echo "Generating documentation for $code:..."
+  java -jar $widocoJar -ontFile $code.ttl -outFolder $code -htaccess -oops -rewriteAll -lang "fr-en" -webVowl &> /dev/null
 
-# Fix paths
-sed -i 's/index\-en.html/index-fr.html/g' sirene/.htaccess
+  # Fix paths
+  sed -i 's/index\-en.html/index-fr.html/g' $code/.htaccess
 
-# Move to htdocs (hosting on Gandi simple server)
-rm -r htdocs/sirene
-mv sirene htdocs
+  # Change WebVOWL display configuration
+  # Not working: https://github.com/dgarijo/Widoco/issues/390
+  jq '
+  .settings.filter.degreesSliderValue |= "2" |
+  .settings.gravity.datatypeDistance |= 450 
+  ' $code/webvowl/data/ontology.json > temp
+  mv temp $code/webvowl/data/ontology.json
+
+  # Move to htdocs (hosting on Gandi simple server)
+  rm -rf htdocs/$code
+  mv $code htdocs
+
+done
 
 
