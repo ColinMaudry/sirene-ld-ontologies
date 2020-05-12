@@ -24,10 +24,13 @@ do
   # Change WebVOWL display configuration
   # Not working: https://github.com/dgarijo/Widoco/issues/390
   jq '
-  .settings.filter.degreesSliderValue |= "2" |
-  .settings.gravity.datatypeDistance |= 450 
+  .settings.filter.degreesSliderValue |= "0" |
+  .settings.gravity.datatypeDistance |= 300
   ' $code/webvowl/data/ontology.json > temp
   mv temp $code/webvowl/data/ontology.json
+
+  echo "Settings for $code:"
+  jq '.settings' $code/webvowl/data/ontology.json
 
   # Move to htdocs (hosting on Gandi simple server)
   rm -rf htdocs/$code

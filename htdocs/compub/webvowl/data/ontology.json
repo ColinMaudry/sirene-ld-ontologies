@@ -740,8 +740,8 @@
       },
       "domain": "1",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "28"
     },
@@ -755,8 +755,8 @@
       },
       "domain": "16",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "30"
     },
@@ -770,8 +770,8 @@
       },
       "domain": "2",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "32"
     },
@@ -799,8 +799,8 @@
       },
       "domain": "2",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "35"
     },
@@ -859,8 +859,8 @@
       },
       "domain": "1",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "42"
     },
@@ -883,8 +883,8 @@
       },
       "domain": "16",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "45"
     },
@@ -916,8 +916,8 @@
       },
       "domain": "16",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "51"
     },
@@ -959,8 +959,8 @@
       },
       "domain": "1",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "58"
     },
@@ -974,8 +974,8 @@
       },
       "domain": "1",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "59"
     },
@@ -989,8 +989,8 @@
       },
       "domain": "2",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "60"
     },
@@ -1018,8 +1018,8 @@
       },
       "domain": "16",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "62"
     },
@@ -1033,18 +1033,18 @@
       },
       "domain": "2",
       "attributes": [
-        "datatype",
-        "functional"
+        "functional",
+        "datatype"
       ],
       "id": "63"
     }
   ],
   "settings": {
     "filter": {
-      "degreesSliderValue": "2"
+      "degreesSliderValue": "0"
     },
     "gravity": {
-      "datatypeDistance": 450
+      "datatypeDistance": 300
     }
   }
 }
