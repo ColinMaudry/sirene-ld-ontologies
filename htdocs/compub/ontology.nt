@@ -80,7 +80,7 @@
 <https://sireneld.io/vocab/compub#duree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#MarchePublic> .
 <https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
-<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#label> "durée" .
+<https://sireneld.io/vocab/compub#duree> <http://www.w3.org/2000/01/rdf-schema#label> "durée (mois)" .
 # 
 # https://sireneld.io/vocab/compub#formePrix
 <https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -89,12 +89,13 @@
 <https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://sireneld.io/vocab/compub#formePrix> <http://www.w3.org/2000/01/rdf-schema#label> "forme du prix" .
 # 
-# https://sireneld.io/vocab/compub#identifiant
-<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
-<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://sireneld.io/vocab/compub#identifiant> <http://www.w3.org/2000/01/rdf-schema#label> "identifiant" .
+# https://sireneld.io/vocab/compub#id
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#id> <http://www.w3.org/2000/01/rdf-schema#label> "identifiant interne" .
 # 
 # https://sireneld.io/vocab/compub#montant
 <https://sireneld.io/vocab/compub#montant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -103,12 +104,12 @@
 <https://sireneld.io/vocab/compub#montant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://sireneld.io/vocab/compub#montant> <http://www.w3.org/2000/01/rdf-schema#label> "montant" .
 # 
-# https://sireneld.io/vocab/compub#montantSubventionsPubliques
-<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
-<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://sireneld.io/vocab/compub#montantSubventionsPubliques> <http://www.w3.org/2000/01/rdf-schema#label> "montant subventions publiques" .
+# https://sireneld.io/vocab/compub#montantSubventionPublique
+<https://sireneld.io/vocab/compub#montantSubventionPublique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#montantSubventionPublique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#montantSubventionPublique> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratConcession> .
+<https://sireneld.io/vocab/compub#montantSubventionPublique> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sireneld.io/vocab/compub#montantSubventionPublique> <http://www.w3.org/2000/01/rdf-schema#label> "montant subvention publique" .
 # 
 # https://sireneld.io/vocab/compub#objet
 <https://sireneld.io/vocab/compub#objet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -123,6 +124,14 @@
 <https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
 <https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://sireneld.io/vocab/compub#procedure> <http://www.w3.org/2000/01/rdf-schema#label> "procédure" .
+# 
+# https://sireneld.io/vocab/compub#uid
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sireneld.io/vocab/compub#ContratCommandePublique> .
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://sireneld.io/vocab/compub#uid> <http://www.w3.org/2000/01/rdf-schema#label> "Identifiant unique" .
 # 
 # https://sireneld.io/vocab/compub#valeurGlobale
 <https://sireneld.io/vocab/compub#valeurGlobale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

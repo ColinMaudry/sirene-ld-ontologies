@@ -276,7 +276,7 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "83",
+      "id": "82",
       "type": "rdfs:Datatype"
     },
     {
@@ -332,7 +332,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "76",
+      "id": "75",
       "type": "rdfs:Datatype"
     },
     {
@@ -396,7 +396,7 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "160",
+      "id": "161",
       "type": "owl:Class"
     },
     {
@@ -448,7 +448,7 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "141",
+      "id": "142",
       "type": "rdfs:Datatype"
     },
     {
@@ -649,13 +649,13 @@
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/information/1730869",
+            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
             "type": "iri"
           },
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
+            "value": "https://www.insee.fr/fr/information/1730869",
             "type": "iri"
           }
         ]
@@ -761,13 +761,13 @@
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/information/1730869",
+            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
             "type": "iri"
           },
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
+            "value": "https://www.insee.fr/fr/information/1730869",
             "type": "iri"
           }
         ]
@@ -928,7 +928,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "83",
+      "id": "82",
       "label": {
         "IRI-based": "string"
       }
@@ -1064,7 +1064,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "76",
+      "id": "75",
       "label": {
         "IRI-based": "string"
       }
@@ -1142,13 +1142,13 @@
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
+            "value": "https://www.insee.fr/fr/information/1730869",
             "type": "iri"
           },
           {
             "identifier": "seeAlso",
             "language": "undefined",
-            "value": "https://www.insee.fr/fr/information/1730869",
+            "value": "https://www.insee.fr/fr/metadonnees/definition/c1057",
             "type": "iri"
           }
         ]
@@ -1246,7 +1246,7 @@
       "comment": {
         "undefined": "Code issue d'une nomenclature officielle"
       },
-      "id": "160"
+      "id": "161"
     },
     {
       "iri": "http://www.w3.org/2001/XMLSchema#string",
@@ -1351,7 +1351,7 @@
       },
       "id": "11",
       "superClasses": [
-        "160"
+        "161"
       ]
     },
     {
@@ -1365,7 +1365,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "141",
+      "id": "142",
       "label": {
         "IRI-based": "string"
       }
@@ -1401,7 +1401,7 @@
       },
       "id": "125",
       "superClasses": [
-        "160"
+        "161"
       ]
     },
     {
@@ -1519,7 +1519,7 @@
       "type": "owl:datatypeProperty"
     },
     {
-      "id": "75",
+      "id": "76",
       "type": "owl:datatypeProperty"
     },
     {
@@ -1535,7 +1535,7 @@
       "type": "owl:datatypeProperty"
     },
     {
-      "id": "82",
+      "id": "83",
       "type": "owl:datatypeProperty"
     },
     {
@@ -1663,7 +1663,7 @@
       "type": "owl:datatypeProperty"
     },
     {
-      "id": "142",
+      "id": "141",
       "type": "owl:datatypeProperty"
     },
     {
@@ -1715,7 +1715,7 @@
       "type": "owl:datatypeProperty"
     },
     {
-      "id": "161",
+      "id": "160",
       "type": "owl:datatypeProperty"
     },
     {
@@ -2178,33 +2178,6 @@
       "id": "47"
     },
     {
-      "iri": "https://sireneld.io/vocab/sirene#dateDebut",
-      "baseIri": "https://sireneld.io/vocab/sirene",
-      "range": "29",
-      "annotations": {
-        "isDefinedBy": [
-          {
-            "identifier": "isDefinedBy",
-            "language": "undefined",
-            "value": "https://sireneld.io/vocab/sirene#",
-            "type": "iri"
-          }
-        ]
-      },
-      "label": {
-        "IRI-based": "dateDebut",
-        "undefined": "Date de début d'une période d'historique d'une unité légale"
-      },
-      "domain": "0",
-      "comment": {
-        "undefined": "Date de début de la période au cours de laquelle toutes les variables historisées de l'unité légale ou de l'établissement restent inchangées."
-      },
-      "attributes": [
-        "datatype"
-      ],
-      "id": "52"
-    },
-    {
       "iri": "https://sireneld.io/vocab/sirene#denominationUniteLegale",
       "baseIri": "https://sireneld.io/vocab/sirene",
       "range": "32",
@@ -2225,6 +2198,33 @@
       "domain": "0",
       "comment": {
         "undefined": "Cette variable désigne la raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale. Cette variable est à null pour les personnes physiques."
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "id": "52"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/sirene#dateDebut",
+      "baseIri": "https://sireneld.io/vocab/sirene",
+      "range": "29",
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://sireneld.io/vocab/sirene#",
+            "type": "iri"
+          }
+        ]
+      },
+      "label": {
+        "IRI-based": "dateDebut",
+        "undefined": "Date de début d'une période d'historique d'une unité légale"
+      },
+      "domain": "0",
+      "comment": {
+        "undefined": "Date de début de la période au cours de laquelle toutes les variables historisées de l'unité légale ou de l'établissement restent inchangées."
       },
       "attributes": [
         "datatype"
@@ -2429,36 +2429,9 @@
       "id": "72"
     },
     {
-      "iri": "https://sireneld.io/vocab/sirene#dateCreationEtablissement",
-      "baseIri": "https://sireneld.io/vocab/sirene",
-      "range": "42",
-      "annotations": {
-        "isDefinedBy": [
-          {
-            "identifier": "isDefinedBy",
-            "language": "undefined",
-            "value": "https://sireneld.io/vocab/sirene#",
-            "type": "iri"
-          }
-        ]
-      },
-      "label": {
-        "IRI-based": "dateCreationEtablissement",
-        "undefined": "Date de début d'une période d'historique d'un établissement"
-      },
-      "domain": "8",
-      "comment": {
-        "undefined": "Année et mois de création de l'établissement"
-      },
-      "attributes": [
-        "datatype"
-      ],
-      "id": "74"
-    },
-    {
       "iri": "https://sireneld.io/vocab/sirene#prenom1UniteLegale",
       "baseIri": "https://sireneld.io/vocab/sirene",
-      "range": "76",
+      "range": "75",
       "annotations": {
         "isDefinedBy": [
           {
@@ -2480,7 +2453,34 @@
       "attributes": [
         "datatype"
       ],
-      "id": "75"
+      "id": "74"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/sirene#dateCreationEtablissement",
+      "baseIri": "https://sireneld.io/vocab/sirene",
+      "range": "42",
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://sireneld.io/vocab/sirene#",
+            "type": "iri"
+          }
+        ]
+      },
+      "label": {
+        "IRI-based": "dateCreationEtablissement",
+        "undefined": "Date de début d'une période d'historique d'un établissement"
+      },
+      "domain": "8",
+      "comment": {
+        "undefined": "La date de création ne correspond pas obligatoirement à dateDebut de la première période de l'établissement, certaines variables historisées pouvant posséder des dates de début soit au 1900-01-01, soit antérieures à la date de création."
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "id": "76"
     },
     {
       "iri": "https://sireneld.io/vocab/sirene#nomenclatureActivitePrincipaleEtablissement",
@@ -2537,6 +2537,30 @@
       "id": "79"
     },
     {
+      "iri": "https://sireneld.io/vocab/sirene#geo_ligne",
+      "baseIri": "https://sireneld.io/vocab/sirene",
+      "range": "82",
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://sireneld.io/vocab/sirene#",
+            "type": "iri"
+          }
+        ]
+      },
+      "label": {
+        "IRI-based": "geo_ligne",
+        "undefined": "geo_ligne"
+      },
+      "domain": "8",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "81"
+    },
+    {
       "iri": "https://sireneld.io/vocab/sirene#denominationUsuelle1UniteLegale",
       "baseIri": "https://sireneld.io/vocab/sirene",
       "range": "23",
@@ -2561,31 +2585,7 @@
       "attributes": [
         "datatype"
       ],
-      "id": "81"
-    },
-    {
-      "iri": "https://sireneld.io/vocab/sirene#geo_ligne",
-      "baseIri": "https://sireneld.io/vocab/sirene",
-      "range": "83",
-      "annotations": {
-        "isDefinedBy": [
-          {
-            "identifier": "isDefinedBy",
-            "language": "undefined",
-            "value": "https://sireneld.io/vocab/sirene#",
-            "type": "iri"
-          }
-        ]
-      },
-      "label": {
-        "IRI-based": "geo_ligne",
-        "undefined": "geo_ligne"
-      },
-      "domain": "8",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "82"
+      "id": "83"
     },
     {
       "iri": "https://sireneld.io/vocab/sirene#libellePaysEtranger2Etablissement",
@@ -3417,33 +3417,6 @@
       "id": "138"
     },
     {
-      "iri": "https://sireneld.io/vocab/sirene#statutDiffusionUniteLegale",
-      "baseIri": "https://sireneld.io/vocab/sirene",
-      "range": "141",
-      "annotations": {
-        "isDefinedBy": [
-          {
-            "identifier": "isDefinedBy",
-            "language": "undefined",
-            "value": "https://sireneld.io/vocab/sirene#",
-            "type": "iri"
-          }
-        ]
-      },
-      "label": {
-        "IRI-based": "statutDiffusionUniteLegale",
-        "undefined": "Statut de diffusion de l’unité légale"
-      },
-      "domain": "0",
-      "comment": {
-        "undefined": "Seules les unités légales diffusibles sont accessibles à tout public (statutDiffusionUniteLegale=O)."
-      },
-      "attributes": [
-        "datatype"
-      ],
-      "id": "140"
-    },
-    {
       "iri": "https://sireneld.io/vocab/sirene#distributionSpeciale2Etablissement",
       "baseIri": "https://sireneld.io/vocab/sirene",
       "range": "19",
@@ -3468,7 +3441,34 @@
       "attributes": [
         "datatype"
       ],
-      "id": "142"
+      "id": "140"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/sirene#statutDiffusionUniteLegale",
+      "baseIri": "https://sireneld.io/vocab/sirene",
+      "range": "142",
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://sireneld.io/vocab/sirene#",
+            "type": "iri"
+          }
+        ]
+      },
+      "label": {
+        "IRI-based": "statutDiffusionUniteLegale",
+        "undefined": "Statut de diffusion de l’unité légale"
+      },
+      "domain": "0",
+      "comment": {
+        "undefined": "Seules les unités légales diffusibles sont accessibles à tout public (statutDiffusionUniteLegale=O)."
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "id": "141"
     },
     {
       "iri": "https://sireneld.io/vocab/sirene#codeCedex2Etablissement",
@@ -3835,7 +3835,7 @@
       "attributes": [
         "datatype"
       ],
-      "id": "161"
+      "id": "160"
     },
     {
       "iri": "https://sireneld.io/vocab/sirene#libelleCedexEtablissement",
@@ -4024,7 +4024,7 @@
       "id": "171"
     },
     {
-      "range": "160",
+      "range": "161",
       "domain": "125",
       "attributes": [
         "anonymous",
@@ -4033,7 +4033,7 @@
       "id": "172"
     },
     {
-      "range": "160",
+      "range": "161",
       "domain": "11",
       "attributes": [
         "anonymous",

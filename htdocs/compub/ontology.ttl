@@ -88,7 +88,7 @@
                 owl:FunctionalProperty ;
        rdfs:domain :MarchePublic ;
        rdfs:range xsd:short ;
-       rdfs:label "durée" .
+       rdfs:label "durée (mois)" .
 
 
 ###  https://sireneld.io/vocab/compub#formePrix
@@ -99,12 +99,13 @@
            rdfs:label "forme du prix" .
 
 
-###  https://sireneld.io/vocab/compub#identifiant
-:identifiant rdf:type owl:DatatypeProperty ,
-                      owl:FunctionalProperty ;
-             rdfs:domain :ContratCommandePublique ;
-             rdfs:range xsd:string ;
-             rdfs:label "identifiant" .
+###  https://sireneld.io/vocab/compub#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:domain :ContratCommandePublique ;
+    rdfs:range xsd:string ;
+    rdfs:label "identifiant interne" .
 
 
 ###  https://sireneld.io/vocab/compub#montant
@@ -115,12 +116,12 @@
          rdfs:label "montant" .
 
 
-###  https://sireneld.io/vocab/compub#montantSubventionsPubliques
-:montantSubventionsPubliques rdf:type owl:DatatypeProperty ,
-                                      owl:FunctionalProperty ;
-                             rdfs:domain :ContratConcession ;
-                             rdfs:range xsd:decimal ;
-                             rdfs:label "montant subventions publiques" .
+###  https://sireneld.io/vocab/compub#montantSubventionPublique
+:montantSubventionPublique rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :ContratConcession ;
+                           rdfs:range xsd:decimal ;
+                           rdfs:label "montant subvention publique" .
 
 
 ###  https://sireneld.io/vocab/compub#objet
@@ -137,6 +138,15 @@
            rdfs:domain :ContratCommandePublique ;
            rdfs:range xsd:string ;
            rdfs:label "procédure" .
+
+
+###  https://sireneld.io/vocab/compub#uid
+:uid rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:domain :ContratCommandePublique ;
+     rdfs:range xsd:string ;
+     rdfs:label "Identifiant unique" .
 
 
 ###  https://sireneld.io/vocab/compub#valeurGlobale

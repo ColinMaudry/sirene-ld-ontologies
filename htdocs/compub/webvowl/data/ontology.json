@@ -5,6 +5,7 @@
       "undefined"
     ],
     "baseIris": [
+      "http://www.w3.org/2002/07/owl",
       "http://www.w3.org/2000/01/rdf-schema",
       "http://www.w3.org/2001/XMLSchema",
       "https://sireneld.io/vocab/sirene",
@@ -16,7 +17,7 @@
   "namespace": [],
   "class": [
     {
-      "id": "0",
+      "id": "3",
       "type": "owl:Class"
     },
     {
@@ -24,99 +25,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "7",
-      "type": "owl:Class"
-    },
-    {
-      "id": "11",
-      "type": "owl:Class"
-    },
-    {
-      "id": "12",
-      "type": "owl:Class"
-    },
-    {
-      "id": "15",
-      "type": "owl:Class"
-    },
-    {
-      "id": "25",
-      "type": "owl:Class"
-    },
-    {
-      "id": "48",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "6",
-      "type": "owl:Class"
-    },
-    {
-      "id": "50",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "36",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "31",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "53",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "54",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "55",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "43",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "56",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "33",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "27",
-      "type": "owl:Class"
-    },
-    {
-      "id": "9",
-      "type": "owl:Class"
-    },
-    {
-      "id": "5",
-      "type": "owl:Class"
-    },
-    {
-      "id": "46",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "29",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "8",
-      "type": "owl:Class"
-    },
-    {
       "id": "10",
-      "type": "owl:Class"
-    },
-    {
-      "id": "3",
       "type": "owl:Class"
     },
     {
@@ -124,7 +33,95 @@
       "type": "owl:Class"
     },
     {
-      "id": "4",
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "28",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "48",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "55",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "56",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "57",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "43",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "36",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "60",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "61",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "40",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "38",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "11",
       "type": "owl:Class"
     },
     {
@@ -132,11 +129,27 @@
       "type": "owl:Class"
     },
     {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
       "id": "2",
       "type": "owl:Class"
     },
     {
-      "id": "19",
+      "id": "26",
       "type": "owl:Class"
     }
   ],
@@ -152,7 +165,7 @@
       "attributes": [
         "external"
       ],
-      "id": "0"
+      "id": "3"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#MarchePublic",
@@ -163,10 +176,10 @@
         "undefined": "Marché public"
       },
       "subClasses": [
-        "3",
-        "4",
-        "5",
-        "6"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
       "id": "1",
       "superClasses": [
@@ -182,12 +195,12 @@
         "undefined": "Fournisseur"
       },
       "subClasses": [
-        "9",
-        "10"
+        "12",
+        "13"
       ],
-      "id": "7",
+      "id": "10",
       "superClasses": [
-        "8"
+        "11"
       ]
     },
     {
@@ -198,9 +211,9 @@
         "IRI-based": "AutoriteConcedante",
         "undefined": "Autorité concédante"
       },
-      "id": "11",
+      "id": "16",
       "superClasses": [
-        "12"
+        "17"
       ]
     },
     {
@@ -212,12 +225,12 @@
         "undefined": "Acheteur public"
       },
       "subClasses": [
-        "13",
-        "11"
+        "18",
+        "16"
       ],
-      "id": "12",
+      "id": "17",
       "superClasses": [
-        "8"
+        "11"
       ]
     },
     {
@@ -230,7 +243,7 @@
       },
       "id": "15",
       "superClasses": [
-        "16"
+        "5"
       ]
     },
     {
@@ -241,70 +254,25 @@
         "IRI-based": "ConcessionService",
         "undefined": "Concession de service"
       },
-      "id": "25",
+      "id": "28",
       "superClasses": [
-        "16"
+        "5"
       ]
     },
     {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "id": "47",
+      "label": {
+        "IRI-based": "Literal",
+        "undefined": "Literal"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
       "id": "48",
       "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "https://sireneld.io/vocab/compub#MarchePartenariat",
-      "baseIri": "https://sireneld.io/vocab/compub",
-      "instances": 0,
-      "label": {
-        "IRI-based": "MarchePartenariat",
-        "undefined": "Marché de partenariat"
-      },
-      "id": "6",
-      "superClasses": [
-        "1"
-      ]
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#decimal",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "50",
-      "label": {
-        "IRI-based": "decimal"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "36",
-      "label": {
-        "IRI-based": "dateTime"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "31",
-      "label": {
-        "IRI-based": "dateTime"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#short",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "53",
-      "label": {
-        "IRI-based": "short"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "54",
-      "label": {
-        "IRI-based": "string"
+        "undefined": "Thing"
       }
     },
     {
@@ -318,7 +286,76 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#decimal",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "56",
+      "label": {
+        "IRI-based": "decimal"
+      }
+    },
+    {
+      "iri": "https://sireneld.io/vocab/compub#MarchePartenariat",
+      "baseIri": "https://sireneld.io/vocab/compub",
+      "instances": 0,
+      "label": {
+        "IRI-based": "MarchePartenariat",
+        "undefined": "Marché de partenariat"
+      },
+      "id": "9",
+      "superClasses": [
+        "1"
+      ]
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "57",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
       "id": "43",
+      "label": {
+        "IRI-based": "dateTime"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "36",
+      "label": {
+        "IRI-based": "dateTime"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#short",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "60",
+      "label": {
+        "IRI-based": "short"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "61",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "22",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "50",
       "label": {
         "IRI-based": "decimal"
       }
@@ -326,7 +363,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#decimal",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "56",
+      "id": "40",
       "label": {
         "IRI-based": "decimal"
       }
@@ -334,7 +371,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "33",
+      "id": "38",
       "label": {
         "IRI-based": "string"
       }
@@ -347,9 +384,9 @@
         "IRI-based": "DelegationServicePublic",
         "undefined": "Délégation de service public"
       },
-      "id": "27",
+      "id": "20",
       "superClasses": [
-        "16"
+        "5"
       ]
     },
     {
@@ -360,9 +397,9 @@
         "IRI-based": "Concessionnaire",
         "undefined": "Concessionnaire"
       },
-      "id": "9",
+      "id": "12",
       "superClasses": [
-        "7"
+        "10"
       ]
     },
     {
@@ -373,7 +410,7 @@
         "IRI-based": "Marche",
         "undefined": "Marché"
       },
-      "id": "5",
+      "id": "8",
       "superClasses": [
         "1"
       ]
@@ -381,7 +418,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "46",
+      "id": "53",
       "label": {
         "IRI-based": "dateTime"
       }
@@ -389,7 +426,7 @@
     {
       "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "29",
+      "id": "34",
       "label": {
         "IRI-based": "dateTime"
       }
@@ -403,13 +440,13 @@
         "undefined": "Etablissement"
       },
       "subClasses": [
-        "7",
-        "12"
+        "10",
+        "17"
       ],
       "attributes": [
         "external"
       ],
-      "id": "8"
+      "id": "11"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#Titulaire",
@@ -418,9 +455,9 @@
       "label": {
         "IRI-based": "Titulaire"
       },
-      "id": "10",
+      "id": "13",
       "superClasses": [
-        "7"
+        "10"
       ]
     },
     {
@@ -431,7 +468,7 @@
         "IRI-based": "MarcheSubsequent",
         "undefined": "Marché subséquent"
       },
-      "id": "3",
+      "id": "6",
       "superClasses": [
         "1"
       ]
@@ -445,12 +482,12 @@
         "undefined": "Contrat de concession"
       },
       "subClasses": [
-        "27",
-        "25",
-        "19",
+        "20",
+        "28",
+        "26",
         "15"
       ],
-      "id": "16",
+      "id": "5",
       "superClasses": [
         "2"
       ]
@@ -463,7 +500,7 @@
         "IRI-based": "AccordCadre",
         "undefined": "Accord-cadre"
       },
-      "id": "4",
+      "id": "7",
       "superClasses": [
         "1"
       ]
@@ -476,9 +513,9 @@
         "IRI-based": "Acheteur",
         "undefined": "Acheteur"
       },
-      "id": "13",
+      "id": "18",
       "superClasses": [
-        "12"
+        "17"
       ]
     },
     {
@@ -490,7 +527,7 @@
         "undefined": "Contrat de commande publique"
       },
       "subClasses": [
-        "16",
+        "5",
         "1"
       ],
       "id": "2"
@@ -503,64 +540,68 @@
         "IRI-based": "ConcessionServicePublic",
         "undefined": "Concession de service public"
       },
-      "id": "19",
+      "id": "26",
       "superClasses": [
-        "16"
+        "5"
       ]
     }
   ],
   "property": [
     {
+      "id": "0",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "4",
+      "type": "rdfs:SubClassOf"
+    },
+    {
       "id": "14",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "17",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "18",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "20",
+      "id": "19",
       "type": "rdfs:SubClassOf"
     },
     {
       "id": "21",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "22",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "23",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "24",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "26",
+      "id": "25",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "28",
-      "type": "owl:datatypeProperty"
+      "id": "27",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "30",
-      "type": "owl:datatypeProperty"
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "31",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "32",
-      "type": "owl:datatypeProperty"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "34",
-      "type": "owl:objectProperty"
+      "id": "33",
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "35",
@@ -568,23 +609,15 @@
     },
     {
       "id": "37",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "38",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "39",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "40",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "41",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "42",
@@ -596,27 +629,27 @@
     },
     {
       "id": "45",
-      "type": "owl:datatypeProperty"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "47",
+      "id": "46",
       "type": "rdfs:SubClassOf"
     },
     {
       "id": "49",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "51",
       "type": "owl:datatypeProperty"
     },
     {
-      "id": "52",
-      "type": "owl:objectProperty"
+      "id": "51",
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "57",
-      "type": "owl:objectProperty"
+      "id": "52",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "54",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "58",
@@ -624,116 +657,170 @@
     },
     {
       "id": "59",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "60",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "61",
       "type": "owl:objectProperty"
     },
     {
       "id": "62",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "63",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "64",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "65",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "66",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "67",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "68",
       "type": "owl:datatypeProperty"
     }
   ],
   "propertyAttribute": [
     {
-      "range": "16",
+      "range": "2",
+      "domain": "1",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "0"
+    },
+    {
+      "range": "2",
+      "domain": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "4"
+    },
+    {
+      "range": "5",
       "domain": "15",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
       "id": "14"
     },
     {
-      "iri": "https://sireneld.io/vocab/compub#concessionnaire",
+      "range": "5",
+      "domain": "20",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "19"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/compub#id",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "9",
+      "range": "22",
       "label": {
-        "IRI-based": "concessionnaire",
-        "undefined": "concessionnaire"
+        "IRI-based": "id",
+        "undefined": "identifiant interne"
       },
-      "domain": "16",
+      "domain": "2",
       "attributes": [
-        "object"
-      ],
-      "id": "17"
-    },
-    {
-      "range": "16",
-      "domain": "19",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "18"
-    },
-    {
-      "range": "2",
-      "domain": "1",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "20"
-    },
-    {
-      "range": "2",
-      "domain": "16",
-      "attributes": [
-        "anonymous",
-        "object"
+        "functional",
+        "datatype"
       ],
       "id": "21"
     },
     {
-      "range": "8",
-      "domain": "12",
+      "iri": "https://sireneld.io/vocab/compub#concessionnaire",
+      "baseIri": "https://sireneld.io/vocab/compub",
+      "range": "12",
+      "label": {
+        "IRI-based": "concessionnaire",
+        "undefined": "concessionnaire"
+      },
+      "domain": "5",
       "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "22"
-    },
-    {
-      "range": "8",
-      "domain": "7",
-      "attributes": [
-        "anonymous",
         "object"
       ],
       "id": "23"
     },
     {
-      "range": "16",
-      "domain": "25",
+      "range": "11",
+      "domain": "17",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
       "id": "24"
     },
     {
-      "range": "16",
-      "domain": "27",
+      "range": "5",
+      "domain": "26",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
-      "id": "26"
+      "id": "25"
+    },
+    {
+      "range": "5",
+      "domain": "28",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "27"
+    },
+    {
+      "range": "17",
+      "domain": "18",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "29"
+    },
+    {
+      "range": "10",
+      "domain": "13",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "30"
+    },
+    {
+      "range": "11",
+      "domain": "10",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "31"
+    },
+    {
+      "range": "17",
+      "domain": "16",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "32"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#dateNotification",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "29",
+      "range": "34",
       "label": {
         "IRI-based": "dateNotification",
         "undefined": "date de notification"
@@ -743,27 +830,27 @@
         "functional",
         "datatype"
       ],
-      "id": "28"
+      "id": "33"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#dateSignature",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "31",
+      "range": "36",
       "label": {
         "IRI-based": "dateSignature",
         "undefined": "date signature"
       },
-      "domain": "16",
+      "domain": "5",
       "attributes": [
         "functional",
         "datatype"
       ],
-      "id": "30"
+      "id": "35"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#objet",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "33",
+      "range": "38",
       "label": {
         "IRI-based": "objet",
         "undefined": "objet"
@@ -773,12 +860,27 @@
         "functional",
         "datatype"
       ],
-      "id": "32"
+      "id": "37"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/compub#montantSubventionPublique",
+      "baseIri": "https://sireneld.io/vocab/compub",
+      "range": "40",
+      "label": {
+        "IRI-based": "montantSubventionPublique",
+        "undefined": "montant subvention publique"
+      },
+      "domain": "5",
+      "attributes": [
+        "functional",
+        "datatype"
+      ],
+      "id": "39"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#titulaire",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "10",
+      "range": "13",
       "label": {
         "IRI-based": "titulaire",
         "undefined": "titulaire"
@@ -787,12 +889,12 @@
       "attributes": [
         "object"
       ],
-      "id": "34"
+      "id": "41"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#datePublicationDonnees",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "36",
+      "range": "43",
       "label": {
         "IRI-based": "datePublicationDonnees",
         "undefined": "date publication donnees"
@@ -802,57 +904,39 @@
         "functional",
         "datatype"
       ],
-      "id": "35"
-    },
-    {
-      "range": "12",
-      "domain": "13",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "37"
-    },
-    {
-      "range": "7",
-      "domain": "10",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "38"
-    },
-    {
-      "range": "12",
-      "domain": "11",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "39"
+      "id": "42"
     },
     {
       "range": "1",
-      "domain": "5",
+      "domain": "9",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
-      "id": "40"
+      "id": "44"
     },
     {
       "range": "1",
-      "domain": "4",
+      "domain": "8",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
-      "id": "41"
+      "id": "45"
+    },
+    {
+      "range": "10",
+      "domain": "12",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "46"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#montant",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "43",
+      "range": "50",
       "label": {
         "IRI-based": "montant",
         "undefined": "montant"
@@ -862,83 +946,74 @@
         "functional",
         "datatype"
       ],
-      "id": "42"
+      "id": "49"
     },
     {
-      "range": "7",
-      "domain": "9",
+      "range": "1",
+      "domain": "7",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
-      "id": "44"
+      "id": "51"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#dateDebutExecution",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "46",
+      "range": "53",
       "label": {
         "IRI-based": "dateDebutExecution",
         "undefined": "date début d'exécution"
       },
-      "domain": "16",
+      "domain": "5",
       "attributes": [
         "functional",
         "datatype"
       ],
-      "id": "45"
+      "id": "52"
     },
     {
       "range": "1",
       "domain": "6",
       "attributes": [
-        "anonymous",
-        "object"
+        "object",
+        "anonymous"
       ],
-      "id": "47"
-    },
-    {
-      "range": "1",
-      "domain": "3",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "49"
+      "id": "54"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#valeurGlobale",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "50",
+      "range": "56",
       "label": {
         "IRI-based": "valeurGlobale",
         "undefined": "valeur globale"
       },
-      "domain": "16",
+      "domain": "5",
       "attributes": [
         "functional",
         "datatype"
       ],
-      "id": "51"
+      "id": "58"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#autoriteConcedante",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "11",
+      "range": "16",
       "label": {
         "IRI-based": "autoriteConcedante",
         "undefined": "autorité concédante"
       },
-      "domain": "16",
+      "domain": "5",
       "attributes": [
         "object"
       ],
-      "id": "52"
+      "id": "59"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#codeCPV",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "0",
+      "range": "3",
       "label": {
         "IRI-based": "codeCPV",
         "undefined": "codeCPV"
@@ -947,12 +1022,27 @@
       "attributes": [
         "object"
       ],
-      "id": "57"
+      "id": "62"
+    },
+    {
+      "iri": "https://sireneld.io/vocab/compub#uid",
+      "baseIri": "https://sireneld.io/vocab/compub",
+      "range": "57",
+      "label": {
+        "IRI-based": "uid",
+        "undefined": "Identifiant unique"
+      },
+      "domain": "2",
+      "attributes": [
+        "functional",
+        "datatype"
+      ],
+      "id": "63"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#formePrix",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "54",
+      "range": "61",
       "label": {
         "IRI-based": "formePrix",
         "undefined": "forme du prix"
@@ -962,27 +1052,27 @@
         "functional",
         "datatype"
       ],
-      "id": "58"
+      "id": "64"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#duree",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "53",
+      "range": "60",
       "label": {
         "IRI-based": "duree",
-        "undefined": "durée"
+        "undefined": "durée (mois)"
       },
       "domain": "1",
       "attributes": [
         "functional",
         "datatype"
       ],
-      "id": "59"
+      "id": "65"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#procedure",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "48",
+      "range": "55",
       "label": {
         "IRI-based": "procedure",
         "undefined": "procédure"
@@ -992,12 +1082,12 @@
         "functional",
         "datatype"
       ],
-      "id": "60"
+      "id": "66"
     },
     {
       "iri": "https://sireneld.io/vocab/compub#acheteur",
       "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "13",
+      "range": "18",
       "label": {
         "IRI-based": "acheteur",
         "undefined": "acheteur"
@@ -1006,37 +1096,21 @@
       "attributes": [
         "object"
       ],
-      "id": "61"
+      "id": "67"
     },
     {
-      "iri": "https://sireneld.io/vocab/compub#montantSubventionsPubliques",
-      "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "56",
+      "iri": "http://www.w3.org/2002/07/owl#topDataProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "range": "47",
       "label": {
-        "IRI-based": "montantSubventionsPubliques",
-        "undefined": "montant subventions publiques"
+        "IRI-based": "topDataProperty"
       },
-      "domain": "16",
+      "domain": "48",
       "attributes": [
-        "functional",
+        "external",
         "datatype"
       ],
-      "id": "62"
-    },
-    {
-      "iri": "https://sireneld.io/vocab/compub#identifiant",
-      "baseIri": "https://sireneld.io/vocab/compub",
-      "range": "55",
-      "label": {
-        "IRI-based": "identifiant",
-        "undefined": "identifiant"
-      },
-      "domain": "2",
-      "attributes": [
-        "functional",
-        "datatype"
-      ],
-      "id": "63"
+      "id": "68"
     }
   ],
   "settings": {

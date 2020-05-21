@@ -250,9 +250,10 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#datePublicationDonnees"
+            <a href="#uid" title="https://sireneld.io/vocab/compub#uid">Identifiant unique</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#datePublicationDonnees"
                title="https://sireneld.io/vocab/compub#datePublicationDonnees">date publication donnees</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#identifiant" title="https://sireneld.io/vocab/compub#identifiant">identifiant</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#id" title="https://sireneld.io/vocab/compub#id">identifiant interne</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#objet" title="https://sireneld.io/vocab/compub#objet">objet</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#procedure" title="https://sireneld.io/vocab/compub#procedure">procédure</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -293,8 +294,8 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-op" title="object property">op</sup>, <a href="#dateDebutExecution"
                title="https://sireneld.io/vocab/compub#dateDebutExecution">date début d'exécution</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#dateSignature" title="https://sireneld.io/vocab/compub#dateSignature">date signature</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#montantSubventionsPubliques"
-               title="https://sireneld.io/vocab/compub#montantSubventionsPubliques">montant subventions publiques</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#montantSubventionPublique"
+               title="https://sireneld.io/vocab/compub#montantSubventionPublique">montant subvention publique</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#valeurGlobale" title="https://sireneld.io/vocab/compub#valeurGlobale">valeur globale</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -412,7 +413,7 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#acheteur" title="https://sireneld.io/vocab/compub#acheteur">acheteur</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#codeCPV" title="https://sireneld.io/vocab/compub#codeCPV">codeCPV</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dateNotification" title="https://sireneld.io/vocab/compub#dateNotification">date de notification</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#duree" title="https://sireneld.io/vocab/compub#duree">durée</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#duree" title="https://sireneld.io/vocab/compub#duree">durée (mois)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#formePrix" title="https://sireneld.io/vocab/compub#formePrix">forme du prix</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#montant" title="https://sireneld.io/vocab/compub#montant">montant</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#titulaire" title="https://sireneld.io/vocab/compub#titulaire">titulaire</a>
@@ -606,20 +607,23 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#dateSignature" title="https://sireneld.io/vocab/compub#dateSignature">date signature</a>
       </li>
       <li>
-         <a href="#duree" title="https://sireneld.io/vocab/compub#duree">durée</a>
+         <a href="#duree" title="https://sireneld.io/vocab/compub#duree">durée (mois)</a>
       </li>
       <li>
          <a href="#formePrix" title="https://sireneld.io/vocab/compub#formePrix">forme du prix</a>
       </li>
       <li>
-         <a href="#identifiant" title="https://sireneld.io/vocab/compub#identifiant">identifiant</a>
+         <a href="#id" title="https://sireneld.io/vocab/compub#id">identifiant interne</a>
+      </li>
+      <li>
+         <a href="#uid" title="https://sireneld.io/vocab/compub#uid">Identifiant unique</a>
       </li>
       <li>
          <a href="#montant" title="https://sireneld.io/vocab/compub#montant">montant</a>
       </li>
       <li>
-         <a href="#montantSubventionsPubliques"
-            title="https://sireneld.io/vocab/compub#montantSubventionsPubliques">montant subventions publiques</a>
+         <a href="#montantSubventionPublique"
+            title="https://sireneld.io/vocab/compub#montantSubventionPublique">montant subvention publique</a>
       </li>
       <li>
          <a href="#objet" title="https://sireneld.io/vocab/compub#objet">objet</a>
@@ -727,7 +731,7 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="duree">
-      <h3>durée<sup class="type-dp" title="data property">dp</sup>
+      <h3>durée (mois)<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -772,17 +776,49 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="identifiant">
-      <h3>identifiant<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="id">
+      <h3>identifiant interne<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://sireneld.io/vocab/compub#identifiant</p>
+         <strong>IRI:</strong> https://sireneld.io/vocab/compub#id</p>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContratCommandePublique"
+                  title="https://sireneld.io/vocab/compub#ContratCommandePublique">Contrat de commande publique</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uid">
+      <h3>Identifiant unique<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://sireneld.io/vocab/compub#uid</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#ContratCommandePublique"
@@ -819,13 +855,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="montantSubventionsPubliques">
-      <h3>montant subventions publiques<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="montantSubventionPublique">
+      <h3>montant subvention publique<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://sireneld.io/vocab/compub#montantSubventionsPubliques</p>
+         <strong>IRI:</strong> https://sireneld.io/vocab/compub#montantSubventionPublique</p>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>

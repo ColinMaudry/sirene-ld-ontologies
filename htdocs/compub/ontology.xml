@@ -144,7 +144,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://sireneld.io/vocab/compub#MarchePublic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-        <rdfs:label>durée</rdfs:label>
+        <rdfs:label>durée (mois)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -161,14 +161,15 @@
     
 
 
-    <!-- https://sireneld.io/vocab/compub#identifiant -->
+    <!-- https://sireneld.io/vocab/compub#id -->
 
 
-    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/compub#identifiant">
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/compub#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://sireneld.io/vocab/compub#ContratCommandePublique"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>identifiant</rdfs:label>
+        <rdfs:label>identifiant interne</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -185,14 +186,14 @@
     
 
 
-    <!-- https://sireneld.io/vocab/compub#montantSubventionsPubliques -->
+    <!-- https://sireneld.io/vocab/compub#montantSubventionPublique -->
 
 
-    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/compub#montantSubventionsPubliques">
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/compub#montantSubventionPublique">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://sireneld.io/vocab/compub#ContratConcession"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:label>montant subventions publiques</rdfs:label>
+        <rdfs:label>montant subvention publique</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -217,6 +218,19 @@
         <rdfs:domain rdf:resource="https://sireneld.io/vocab/compub#ContratCommandePublique"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>procédure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sireneld.io/vocab/compub#uid -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sireneld.io/vocab/compub#uid">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://sireneld.io/vocab/compub#ContratCommandePublique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Identifiant unique</rdfs:label>
     </owl:DatatypeProperty>
     
 
